@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人人网注册页面</title>
+</head>
+<body>
+    <img src="../images/高原.jpg" width="300" height="150">
+    <P>人人网，中国 <b>最真实，最有效</b>的社会平台，加入人人网，找回老朋友，结交新朋友</P>
+    <form action="#" method="post">
+        <p>电子邮箱：<input type="email" name="email" maxlength="50"></p>
+        <p>设置密码：<input type="password" name="password"  maxlength="16"></p>
+        <p>真实姓名：<input type="text" name="text" maxlength="8" value="sss" readonly></p>
+        <p>性别：<input type="radio" name="radio" checked>男
+                <input type="radio" name="radio" >女
+        </p>
+        <p>生日：
+            <select name="year">
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996" selected>1996</option>*
+            </select>年
+            <select name="data">
+                <option value="一月">1</option>
+                <option value="二月">2</option>
+                <option value="三月">3</option>
+                <option value="四月">4</option>
+                <option value="五月" selected>5</option>
+                <option value="六月">6</option>
+                <option value="七月">7</option>
+            </select>月
+            <select name="mon">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6" selected>6</option>
+                <option value="7">7</option>
+            </select>日
+        </p>
+        <p>为什么要填写我的生日？</p>
+        <p>我现在：
+            <select name="mon">
+            <option value="默认">请选择身份</option>
+            <option value="医生">医生</option>
+            <option value="老师">老师</option>
+            </select>（非常重要）
+        </p>
+        <p>
+            <img src="../images/高原.jpg" height="80" width="100"/>
+            <a href="#">看不清换一张？</a>
+        </p>
+        <P>验证码：
+            <input type="text" maxlength="4" name="yanzheng">
+        </P>
+        <p><input type="image" src="../images/小雪初晴.jpg" width="100" height="30"></p>
+        <p><input type="hidden" value="666" name="userName"></p>
+        <p><input type="submit"name="userName" disabled></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*form{*/
+            /*margin: 0px auto;*/
+        /*}*/
+       /*h2{*/
+           /*border-bottom: 2px solid red;*/
+       /*}*/
+        /*form{*/
+            /*width: 300px;*/
+            /*height: 150px;*/
+            /*border: 1px solid red;*/
+        /*}*/
+        /*li{*/
+            /*list-style: none;*/
+            /*float: left;*/
+        /*}*/
+        /*ul{*/
+            /*opacity: 0;*/
+        /*}*/
+        /*form:hover ul{*/
+            /*opacity: 1;*/
+            /*transition: opacity 2s linear;*/
+        /*}*/
+       /*form:hover{*/
+           /*height: 300px;*/
+           /*transition: width 2s linear;*/
+       /*}*/
+
+
+
+
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            position: absolute;
+        }
+        .father{
+            width: 800px;
+            height: 400px;
+            border: 1px solid red;
+            margin-top: 100px ;
+            position: absolute;
+            left: 500px;
+
+        }
+      nav  ul{
+            list-style: none;
+        }
+      nav  li{
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+        nav{
+            width: 200px;
+            height: 400px;
+           /*vertical-align:middle;*/
+            background:linear-gradient(to right,#AAAACC,white);
+            float: left;
+            position: absolute;
+        }
+       nav a{
+            text-decoration: none;
+            color: black;
+        }
+      nav  a:hover{
+            color: #FAA53B;
+        }
+       nav li:hover{
+            background: #e5e5e5;
+        }
+       li div{
+           width: 600px;
+           height: 400px;
+           position: absolute;
+           top: 0px;
+           left: 200px;
+           z-index: 0;
+       }
+       li:nth-of-type(1) .son1{
+            background: #F10158 ;
+        }
+        li:nth-of-type(2) .son2{
+            background: #9873F2 ;
+        }
+        li:nth-of-type(3) .son3{
+            background: #0099FF ;
+        }
+        li:nth-of-type(4) .son4{
+            background: #FAA53B ;
+        }
+
+        /*li:nth-of-type(1):hover .son1{*/
+            /*z-index: 5;*/
+        /*}*/
+        li:hover div{
+            z-index: 1;
+        }
+        .son0{
+            width: 600px;
+            height: 400px;
+            background:url("../images/寰宇地理.jpg") #aaaaaa;
+            position: absolute;
+            left:200px;
+        }
+        .son li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<!--<form action="#" method="post">-->
+    <!--<h2>高级搜索</h2>-->
+    <!--<input type="text" placeholder="请输入关键字"><br>-->
+    <!--<input type="button" value="搜索">-->
+    <!--<ul>-->
+        <!--<li>-->
+            <!--<div><select><option>电视剧</option></select></div>-->
+            <!--<div><select><option>电视剧</option></select></div>-->
+            <!--<div><select><option>电视剧</option></select></div>-->
+            <!--<div><select><option>电视剧</option></select></div>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<div><select><option>电视剧</option></select></div>-->
+            <!--<div><select><option>电视剧</option></select></div>-->
+            <!--<div><select><option>电视剧</option></select></div>-->
+        <!--</li>-->
+    <!--</ul>-->
+<!--</form>-->
+
+
+
+
+<div class="father">
+    <nav>
+        <ul>
+            <li><a href="#">食物</a><div class="son1">111111111111</div></li>
+            <li><a href="#">衣服</a><div class="son2"></div></li>
+            <li><a href="#">酒店</a><div class="son3"></div></li>
+            <li><a href="#">出行工具</a><div class="son4"></div></li>
+        </ul>
+    </nav>
+    <div class="son0"></div>
+    <!--<div class="son">-->
+        <!--<ul>-->
+            <!--<li><a href="#">的数据福建师范经适房和节食减肥</a></li>-->
+            <!--<li><a href="#">世纪东方胜多负少的首付款接收方</a></li>-->
+            <!--<li><a href="#">as动画负数负数看风景设计费康师傅</a></li>-->
+            <!--<li><a href="#">分类as队列散金粉世家设计费 是个</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+</div>
+</body>
+</html>

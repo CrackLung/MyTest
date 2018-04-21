@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>滚动广告</title>
+    <style type="text/css">
+        #adv{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        #main{
+            margin: 0px auto;
+            width: 1200px;
+            margin: 0px auto;
+        }
+
+    </style>
+</head>
+<body>
+<div id="adv"><img src="../images/adv.jpg"/></div>
+<div id="main">
+    <img src="../images/main1.JPG"/>
+    <img src="../images/main2.JPG"/>
+    <img src="../images/main3.JPG"/>
+</div>
+<script type="text/javascript">
+    var advTop;//层距页面顶端距离
+    var advLeft;
+    var advObj;//层对象
+    function ini() {//页面加载完成，即获取图片上，左距窗口的距离
+        advObj=document.getElementById('adv');
+        if(advObj.currentStyle){
+            advTop=parseInt(advObj.currentStyle.top);
+            advLeft=parseInt(advObj.currentStyle.left);
+        }else{
+            advTop=parseInt(document.defaultView.getComputedStyle(advObj,null).top);
+            advLeft=parseInt(document.defaultView.getComputedStyle(advObj,null).left);
+        }
+    }
+    function move() {
+        var sTop=parseInt(document.documentElement.scrollTop||document.body.scrollTop);//获取滚动条距离
+        var sLeft=parseInt(document.documentElement.scrollLeft||document.body.scrollLeft);
+        advObj.style.top=advTop+sTop+'px';
+        advObj.style.left=advLeft+sLeft+'px';
+    }
+    window.onload=ini;
+    window.onscroll=move;
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上机练习3</title>
+</head>
+<body>
+    <input type="button" value="计算两数运算" onclick="demo(prompt('请输入第一个数：',''),prompt('请输入第二个数：',''),prompt('请输入运算符号：',''))">
+    <script type="text/javascript">
+        function demo(count1,count2,count3){
+            switch (count3){
+                case "+":
+                    alert("两数运算结果为："+count1+"+"+count2+"="+(count1+count2));
+                    break;
+                case "-":
+                    alert("两数运算结果为："+count1+"-"+count2+"="+(count1-count2));
+                    break;
+                case "*":
+                    alert("两数运算结果为："+count1+"*"+count2+"="+(count1*count2));
+                    break;
+                case "/":
+                    alert("两数运算结果为："+count1+"/"+count2+"="+(count1/count2));
+                    break;
+                case "%":
+                    alert("两数运算结果为："+count1+"%"+count2+"="+(count1%count2));
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

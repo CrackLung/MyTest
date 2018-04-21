@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数的应用</title>
+</head>
+<body>
+<!--<input name="btn" type="button" vaule="显示5次欢迎学习javaScript" onclick="study()">-->
+<input name="btn" type="button" value="显示5次欢迎学习javaScript" onclick="study2(prompt('输入显示欢迎学习javaScript次数',''))" placeholder="点击">
+<script type="text/javascript">
+    /**
+     * 无参函数
+     */
+    // function study(){
+    //     for(var i=0;i<5;i++){
+    //         document.write("<h4>欢迎学习javaScript</h4>");
+    //     }
+    // }
+
+    /**
+     * 带参函数
+     */
+    function study2(count){
+        for(var i=0;i<count;i++){
+            document.write("<h4>欢迎学习javaScript</h4>");
+        }
+    }
+</script>
+</body>
+</html>

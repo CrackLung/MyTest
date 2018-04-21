@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网易邮箱页面布局</title>
+    <style>
+        body{
+            height: 1500px;
+        }
+        div{
+            display: inline;
+            float: left;
+        }
+        header{
+            height: 300px;
+            /*网页外框：粗细及颜色*/
+            border: 1px solid red;
+        }
+        section{
+            height: 800px;
+            border: 1px solid red;
+        }
+        footer{
+            height: 400px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="div">
+        <h2>网页头部</h2>
+        <p>
+            <a href="http://s.bdqn.cn/login" target="mainFrame">显示第一页</a><br/>
+            <a href="http://fanyi.youdao.com/" target="mainFrame">显示第二页</a><br/>
+            <a href="http://www.baidu.com" target="mainFrame">显示第三页</a><br/>
+        </p>
+        <form action="" method="post" enctype="multipart/form-data">
+            <p>
+                <input type="file" value="files"/><br/>
+                <input type="submit" name="upload" value="上传"/>
+            </p>
+        </form>
+        </div>
+    </header>
+    <section>
+        <div>
+            <h2>网页主体部分</h2>
+            <form method="post" action="Hello.html">
+                <p>名字：<input name="name" type="text" maxlength="16" ></p>
+                <p>密码：<input name="passWord" type="password" maxlength="2"></p>
+                <p>
+                    <input name="butReset" type="reset" value="reset按钮" />
+                    <input name="submit" type="submit" value="submit按钮" />
+                    <input name="button" type="button" value="button按钮" onclick="alert(this.value)" />
+                    <input name="butReset" type="image" src="../images/小雪初晴.jpg" height="30px" width="100px"/>
+                </p>
+                <p>
+                    <input name="Button" type="text" value="提交" >
+                    <input name="Reset" type="reset" value="重填" >
+                </p>
+                <p>
+                    性别：
+                    <label for="male">男</label>
+                    <input name="info" type="radio" value="男" checked id="male">
+                    <label for="famale">女</label>
+                    <input name="info" type="radio" value="女" id="famale">
+                </p>
+                <p>
+                    爱好：
+                    <input name="play" type="checkbox" value="玩游戏" checked>玩游戏
+                    <input name="play" type="checkbox" value="钓鱼" readonly>钓鱼
+                    <input name="play" type="checkbox" value="骑摩托" disabled>骑摩托
+                </p>
+                <p>
+                    出生日期：
+                    <input name="byear" type="text" value="yyyy" size="4" maxlength="4">年
+                    <select name="bmon">
+                        <option value="" selected>[选择月份]</option>
+                        <option value="1">一月</option>
+                        <option value="2">二月</option>
+                        <option value="3">三月</option>
+                        <option value="4">四月</option>
+                        <option value="5">五月</option>
+                        <option value="6">六月</option>
+                        <option value="7">七月</option>
+                        <option value="8">八月</option>
+                        <option value="9">九月</option>
+                        <option value="10">十月</option>
+                        <option value="11">十一月</option>
+                        <option value="12">十二月</option>
+                    </select>月
+                    <input name="bday" value="dd" type="text" size="2" maxlength="2">日
+                </p>
+            </form>
+        </div>
+            <div>
+                <h4>填写个人评价</h4>
+                <form method="post" action="" style="margin-left: 40%">
+            <textarea name="textarea" cols="40" rows="6">自由，平等，博爱......
+            </textarea>
+                    <p>
+                        邮箱：<input type="email" name="email" required pattern="^1[358]\d{9}"/>
+                    </p>y
+                    <input type="submit"/>
+
+                    <p>
+                        请输入你的网址：<input type="url" name="url"/>
+                    </p>
+                    <input type="submit"/>
+
+                    <p>
+                        请输入数字：<input type="number" name="number" min="0" max="100" step="10" value="10"/>
+                    </p>
+                    <input type="submit"/>
+
+                    <p>
+                        请输入数字：<input type="range" name="range" min="0" max="100" step="10" value="10"/>
+                    </p>
+                    <input type="submit"/>
+
+                    <p>
+                        请输入搜索关键字：<input type="search" search="range" name="sousou" placeholder="请输入要搜索的关键字"/>
+                        <input type="submit" value="GO"/>
+                    </p>
+
+                </form>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <iframe src="http://www.nba98.com/" width="1000 px" height="350px" name="mainFrame" />
+    </footer>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数</title>
+</head>
+<body>
+     <script type="text/javascript">
+         /**
+          * 常用系统函数
+          */
+         var op1=prompt("请输入第一个数：","");
+         var op2=prompt("请输入第二个数：","");
+         var p1=parseInt(op1);//先检查字符串开头是否是数字，是则检查到非有效数字的位置，然后返回有效数字，否则返回NaN，如果数字有小数，则不会返回小数
+         var p2=parseInt(op2);
+         document.write(p1+"+"+p2+"="+(p1+p2));
+         //isNaN()用于判断是否是非数字，是则返回true，否则返回false
+         var flag1= isNaN("12.5");
+         var flag2= isNaN("12.5s");
+         var flag3= isNaN(12.5);
+         document.write("<br/>"+flag1+"<br/>"+flag2+"<br/>"+flag3);
+     </script>
+</body>
+</html>

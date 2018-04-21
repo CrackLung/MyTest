@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建和插入节点</title>
+</head>
+<body>
+    <ul>
+        <li>2月28日</li>
+        <li>2月29日</li>
+        <li>2月30日</li>
+        <li>2月31日</li>
+    </ul>
+    <script type="text/javascript">
+        var newLi=document.createElement('li');//创建新节点
+        newLi.innerHTML="3月1日";//新增内容
+
+        var ul=document.getElementsByTagName('ul')[0];
+        // ul.appendChild(newLi);//或ul.append(newLi);//插入节点末尾
+        // ul.insertBefore(newLi,ul.firstChild);//插入节点前面
+
+        ul.replaceChild(newLi,ul.getElementsByTagName('li')[2]);//替换
+
+        ul.removeChild(ul.firstChild);//删除
+
+        var newUl=ul.cloneNode(true);//复制
+        ul.parentNode.appendChild(newUl);
+    </script>
+</body>
+</html>

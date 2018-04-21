@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上机练习4</title>
+</head>
+<body>
+    <input type="button" value="确定" onclick="demo(prompt('请输入科目数量:',''))">
+    <!--prompt()返回的是String类型数值，无论输入的是数字还是其他都是以String类型返回-->
+<script type="text/javascript">
+    function demo(counts){
+        var num=0;
+        var count=parseInt(counts);//开头不是数字，则返回NaN
+        // console.log(count.constructor)
+        // alert(typeof(count));
+        if(!isNaN(count)){//如果count是数字则返回false，否则返回true
+        // if(count.constructor==Number){
+            for(var i=1;i<=count;i++){
+                var num2=prompt('请输入第'+i+'门成绩','');
+                var num3=parseInt(num2);
+                if(num2<0||isNaN(num3)){//num3如果不是数字则返回true，满足条件
+                    alert("成绩不能为负数或字符！");
+                    break;
+                }else
+                num=num+num3;
+            }
+            alert(count+"门科目总成绩:"+num);
+        }else
+            alert("输入不是数字！");
+    }
+</script>
+</body>
+</html>

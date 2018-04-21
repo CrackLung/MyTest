@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>仿冬奥列表内容</title>
+    <link rel="stylesheet" href="../CSS/games.css">
+</head>
+<body>
+<div class="contain">
+    <div>
+        <img src="../images/winter.jpg" alt="奥运五环标志" width="320" height="198">
+    </div>
+    <h2>祝福冬奥</h2>
+    <ul class="gameList">
+        <li> 贝克汉姆：衷心希望北京能够申办成功！</li>
+        <li> 姚明：北京申冬奥是个非常棒的机会！加油！</li>
+        <li> 张虹：北京办冬奥，大家的热情定超乎想象！ </li>
+        <li> 肖恩怀特：我爱北京，支持北京申办冬奥会！</li>
+    </ul>
+</div>
+<script src="../../JS/jquery-1.8.3.min.js"></script>
+<script>
+    var $newNode1=$("<li>你喜欢那些冬季运动项目</li>");
+    var $newNode2=$("<li>北京申办冬奥会是再适合不过了</li>");
+    // $("ul").append($newNode1);
+    // $("ul").prepend($newNode2);
+    // $("ul").after($newNode1);
+    // $("ul").before($newNode2);
+
+    // $(".gameList li:eq(0)").remove();
+    // $(".gameList li:eq(1)").empty();
+
+    // $(".gameList li:eq(2)").replaceWith($newNode1);
+    // $(".gameList li:eq(2)").replaceAll($newNode2);
+
+    // $(".gameList li:eq(1)").click(function () {
+    //     $(this).clone(true).appendTo(".gameList");
+    // });
+    // $(".gameList li:eq(2)").click(function () {
+    //     $(this).clone(false).appendTo(".gameList");
+    // });
+
+    // $(".contain img").click(function () {
+    //     alert($(this).attr("alt"));
+    // });
+
+    // $(".contain img").attr({width:"200",height:"80"});
+
+    $(".contain img").removeAttr("alt");
+</script>
+</body>
+</html>

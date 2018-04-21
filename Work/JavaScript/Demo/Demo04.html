@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>程序调试</title>
+    <style type="text/css">
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <script type="text/javascript">//script无法设置样式
+        var t=prompt("请输入一个整数","");//接收提示对话框的值
+        if(t>5){//当输入值大于5时满足条件
+            for(var i=t;i>0;i--){//层数与输入值一致
+                for(var j=i;j>0;j--){//逐层递减
+                    document.write("*&nbsp;&nbsp;");
+                }
+                document.write("<br/>");//每层打印完就换行
+            }
+        }else {//当值小于5时，走else的javaScript语句
+            for(var k=t;k>0;k--){//层数与输入值一致
+                for(var h=k;h>0;h--){//第一层递减
+                    document.write("*&nbsp;&nbsp;");
+                }
+                document.write("<br/>");//每层打印完就换行
+            }
+            for(var g=0;g<t;g++){//层数与输入值一致
+                for(var f=0;f<=g;f++){//第二层递增
+                    document.write("*&nbsp;&nbsp;");
+                }
+                document.write("<br/>");//每层打印完就换行
+            }
+        }
+    </script>
+</div>
+</body>
+</html>

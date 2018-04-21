@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>节点信息</title>
+</head>
+<body>
+<ul id="nodeList"><li>nodeName</li><li>nodeValue</li><li>nodeType</li>
+</ul><p></p>
+<img src="../images/吸烟.PNG" id="img" alt="吸烟" title="吸烟">
+<script type="text/javascript">
+    var nodes=document.getElementById('nodeList');
+    var type1=nodes.firstChild.nodeType;//获取ul下第一个元素的节点类型
+    var type2=nodes.firstChild.firstChild.nodeType;//获取ul下第一个子节点下第一个子节点的节点类型
+    var name1=nodes.firstChild.firstChild.nodeName;//获取ul下第一个子节点下第一个子节点的节点名称
+    var str =nodes.firstChild.firstChild.nodeValue;//获取ul下第一个子节点下第一个子节点的节点值
+    var con ="type1:"+type1+"<br/>type2:"+type2+"<br/>name1:"+name1+"<br/>str:"+str;
+    document.getElementById("nodeList").nextSibling.innerHTML=con;
+
+
+    var nodes2=document.getElementById('img');
+    document.write("<br/>img节点名称："+nodes2.nodeName+"<br/>");
+    document.write("img节点类型："+nodes2.nodeType+"<br/>");
+    document.write("img节点值："+nodes2.nodeValue+"<br/>");
+
+    var nodes3=nodes2.getAttributeNode('alt');
+    document.write("<br/>alt节点名称："+nodes3.nodeName+"<br/>");
+    document.write("alt节点类型："+nodes3.nodeType+"<br/>");
+    document.write("alt节点值："+nodes3.nodeValue+"<br/>");
+
+    nodes2.setAttribute("width","150px");
+    nodes2.setAttribute("height","150px");
+</script>
+</body>
+</html>

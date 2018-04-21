@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模拟计算机病毒效果</title>
+</head>
+<body >
+<h1 onclick="Two()">sdsfsfs</h1>
+<script type="text/javascript">
+    var i = 0;
+    while (i<5){
+        i++;
+        function one() {
+            window.open('Demo14.html','百度首页','width=500,height=500');
+        }
+    }
+    function Two() {
+        setInterval('one()',1000);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="main">
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+</div>
+<!--<img src="../images/吸烟.PNG">-->
+<!--<div id="father">-->
+    <!--<div id="son"><div>子元素</div></div>-->
+<!--</div>-->
+
+<!--<ul>-->
+    <!--<li>植树节1</li>-->
+    <!--<li>植树节1</li>-->
+    <!--<li>植树节1</li>-->
+<!--</ul>-->
+<!--<button type="button" id="7">新增同辈</button>-->
+<!--<button type="button" id="8">新增父辈</button>-->
+<!--<button type="button" id="9">替换元素</button>-->
+<!--<button type="button" id="10">克隆元素</button>-->
+
+
+<!--<form action="#" method="get">-->
+    <!--用户名：<input type="text" name="userName" placeholder="用户名" required/><br>-->
+    <!--密码：<input type="password" name="pwd" placeholder="密码" required><br>-->
+    <!--<button>登录</button>-->
+<!--</form>-->
+
+
+<!--<div id="father">-->
+    <!--<h1 id="h1">saaaaaaaaaaaaaaaaaaa</h1>-->
+    <!--<span id="h2">saaaaaaaaaaaaaaaaaaa</span>-->
+    <!--<div>dddddddddddddddddd</div>-->
+    <!--<div>dddddddddddddddddddd</div>-->
+    <!--<div>vvvvvvvvvvvvvvvvv</div>-->
+<!--</div>-->
+
+<!--<button>开始动画</button>-->
+<!--<p>默认情况下，所有 HTML 元素的位置都是静态的，并且无法移动。如需对位置进行操作，记得首先把元素的 CSS position 属性设置为 relative、fixed 或 absolute。</p>-->
+<!--<div style="background:#98bf21;height:100px;width:10px;position:absolute;">-->
+<!--</div>-->
+
+<!--<div id="one">不是快捷快捷阿尔法</div>-->
+<!--<div id="two">shbjsdfslkfkskd</div>-->
+<!--<a href="javascript:">跳转JS代码</a>-->
+<!--&lt;!&ndash;点击超链接，执行js代码&ndash;&gt;-->
+<!--<form action="Demo01.html">-->
+    <!--<input onblur="alert('失去焦点')" onfocus="alert('获得焦点')">-->
+    <!--&lt;!&ndash;//相互跳转&ndash;&gt;-->
+    <!--<button type="submit" onclick="javascript:alert('先执行js代码')">提交按钮</button>-->
+    <!--&lt;!&ndash;//当点击按钮执行js代码，自动跳转Demo01.html&ndash;&gt;-->
+<!--</form>-->
+<!--<a href="Demo12.html">推广链接</a>-->
+<!--<input type="button" value="显示信息" onclick="Humans();">-->
+<!--<button id="aa"  >解除绑定</button>-->
+<!--<button id="bb"  >增加</button>-->
+<!--<ul>-->
+    <!--<li>圣诞快乐</li>-->
+    <!--<li>圣诞快乐</li>-->
+    <!--<li>圣诞快乐</li>-->
+<!--</ul>-->
+
+<script src="../../JS/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        alert($("#main").children().length);
+    });
+// $(function () {
+//     $("img").click(function () {
+//         alert($(this).attr("src"));
+//         $(this).attr({"title":"吸烟","alt":"吸烟"});
+//         $(this).removeAttr("src");
+//     });
+// });
+
+// $(function () {
+//     $("#son").click(function () {
+//         alert("GGGGG");
+//     });
+//     // $("#son").empty();
+//     // $("son").remove();
+//     $("son").detach();
+//     $("#son").appendTo($("#father"));
+//
+// });
+
+
+// $("#7").click(function () {
+//     var $add=$("<li>新增li</li>");
+//     $add.appendTo($("ul"));
+// });
+//
+// $("#8").click(function () {
+//     var $add=$("<li>新增li</li>");
+//     $("ul").after($add);
+// });
+//
+// $("#9").click(function () {
+//     var $add=$("<li>新增li</li>");
+//     $("li:eq(2)").replaceWith($add);
+// });
+//
+// $("li:eq(1)").mouseover(function () {
+//         $(this).css({"color": "red"});
+//     }
+// )
+// $("#10").click(function () {
+//     // var $add=$("<li>新增li</li>");
+//     $("li:eq(1)").clone(true).appendTo($("ul"));
+// });
+//    $(function () {
+//       $(document).keydown(function (event) {
+//           if(event.keyCode==13){
+//               $("button").submit();
+//           }
+//       });
+//    });
+
+    // $(function(){
+    //     $("#bb").click(function () {
+    //         $("ul").append("<li>圣诞快乐</li>");
+    //     });
+    //     $("ul").on({
+    //         mouseover:function () {$(this).css({"color":"red"})},
+    //         mouseout:function () {$(this).css({"color":"yellow"})},
+    //         click:function () {$(this).css({"color":"blue"})}
+    //     },"li");
+    //     $("#aa").click(function () {
+    //         $("ul").off("click");
+    //     });
+        // $("#father").click(function () {
+        //     $("span:hidden").show();
+        // })
+        // $("#ss").toggle(function () {
+        //     $("body").css({"background":"red"})
+        // },function () {
+        //     $("body").css({"background":"yellow"})
+        // },function () {
+        //     $("body").css({"background":"blue"})
+        // })
+    // })
+
+
+
+    // $("h1+div").css({"color":"red"})
+    // $("div#father").css({"color":"red"});
+
+    // $(document).ready(function(){
+    //     $("button").click(function(){
+    //         $("div").animate({height:'150px',transform:'rotate(80deg)'});
+    //
+    //     });
+    // });
+    // $(function () {
+    //     $('#one').click(function () {
+    //         $(this).css("color","red").css("fonts-size","18px").next().css("color","blue");
+    //     });
+    // });
+
+
+    // function Humans() {
+    //     this.clothing=['14564','1211','6485'];
+    //     // alert(this.clothing);
+    // }
+    // function Dog() {
+    //     Humans.call(this);
+    // }
+    // // Dog.prototype=new Animal();
+    // var dog=new Dog();
+    // dog.clothing.push('79878');
+    // document.write(dog.clothing);
+    // var dog2=new Dog();
+    // // dog.clothing.push('79878');
+    // document.write('<br/>'+dog2.clothing);
+
+    // function One(name) {
+    //     this.name=name;
+    //     this.clothing=['153','465','898'];
+    // }
+    // One.prototype.sayName=function () {
+    //     alert(this.name);
+    // }
+    // function Two(name,age) {
+    //     One.call(this,name);
+    //     this.age=age;
+    // }
+    // Two.prototype=new One();
+    // Two.prototype.sayAge=function () {
+    //     alert(this.age);
+    // };
+    // var theer=new Two('mary',11);
+    // theer.clothing.push('97867');
+    // alert(theer.clothing);
+    // theer.sayAge();
+    // theer.sayName();
+    // var theer1=new Two('mhjk',15);
+    // // theer1.clothing.push('97867');
+    // alert(theer1.clothing);
+    // theer1.sayAge();
+    // theer1.sayName();
+
+
+    // var str=new Object();
+    // str.name='大好';
+    // str.showStr=function () {
+    //     alert(str.name);
+    // }
+    // window.onload(str.showStr());
+
+    // var str={
+    //     name:'搜索',
+    //     showStr:function () {
+    //         document.write(str.name);
+    //     }
+    // };
+    // function shows() {
+    //     str.showStr();
+    // }
+    // document.write(typeof(age));
+    // var age;
+    // if(age==undefined){
+    //     document.write("yes");
+    // }
+
+    // var flag= confirm("你想睡觉吗？")
+    // if(flag){
+    //     alert("想睡觉");
+    //     var answer= prompt("想睡多久",8);
+    //     alert("您要睡觉的时间是："+answer)
+    // }else{
+    //     alert("还能坚持！");
+    // }
+// a=null;
+// alert(typeof (null))
+// var i=['a','b','c'];
+// for (var d in i){
+//     document.write(i[d]);
+// }
+    
+    
+//     var Flower={
+//         str:[
+//             {'name':'是'},
+//             {'name':'就'}
+//             ]
+//     }
+</script>
+</body>
+</html>

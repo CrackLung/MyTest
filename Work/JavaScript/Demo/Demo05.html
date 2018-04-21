@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>根据时间问好</title>
+    <style type="text/css">
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        do{
+            var a=prompt("请输入时间点：");
+            alert(a);
+            if(a<=24&&a>=0){
+                if(a>=6&&a<=12){
+                    document.write("<h2>上午好，欢迎来到贵美！</h2><br>");
+                    for(var i=0;i<a;i++){
+                        document.write("<img src='../images/难受.PNG'>");
+                    }
+                }else if(a>=13&&a<=20){
+                    document.write("<h2>下午好，欢迎来到贵美！</h2><br>");
+                    for(var i=0;i<a;i++){
+                        document.write("<img src='../images/鄙视.PNG'>");
+                    }
+                }else {
+                    document.write("<h2>夜深了，该休息了！</h2><br>");
+                    for(var i=0;i<a;i++){
+                        document.write("<img src='../images/月亮.PNG'>");
+                    }
+                }
+                break;
+            }
+        }while (true);
+    </script>
+</body>
+</html>

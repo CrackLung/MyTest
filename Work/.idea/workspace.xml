@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/HTML5/28_T19李佶瑞02HTML作业/当当购物车页面/js/shopping.js" line="26" mnemonic="4" />
+    <bookmark url="file://$PROJECT_DIR$/JavaScript/Demo/Demo18.html" line="0" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="53d32bbe-68f2-40bd-8184-6940d918c806" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Demo54.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo54.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="623">
+              <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>title</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo21.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo23.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo24.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo22.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo25.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo27.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo28.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo26.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo29.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo30.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo31.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo32.html" />
+        <option value="$PROJECT_DIR$/JavaScript/CSS/style.css" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo33.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo34.html" />
+        <option value="$PROJECT_DIR$/JavaScript/CSS/nav.css" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo35.html" />
+        <option value="$PROJECT_DIR$/JavaScript/CSS/style1.css" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo37.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo36.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo39.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo40.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo41.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/跑马灯.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo42.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo38.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo43.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo45.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo44.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo46.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo47.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo49.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo51.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo48.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo52.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo53.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo.html" />
+        <option value="$PROJECT_DIR$/JavaScript/JavaScript.txt" />
+        <option value="$PROJECT_DIR$/bootStrap/Demo.html" />
+        <option value="$PROJECT_DIR$/cpts_272_nn/contact.html" />
+        <option value="$PROJECT_DIR$/cpts_272_nn/account.html" />
+        <option value="$PROJECT_DIR$/cpts_272_nn/products.html" />
+        <option value="$PROJECT_DIR$/cpts_272_nn/single.html" />
+        <option value="$PROJECT_DIR$/cpts_272_nn/index.html" />
+        <option value="$PROJECT_DIR$/charisma-master/Demo.html" />
+        <option value="$PROJECT_DIR$/cpts_272_nn/checkout.html" />
+        <option value="$PROJECT_DIR$/cpts_272_nn/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/HTML5/Thelabel.txt" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo54.html" />
+        <option value="$PROJECT_DIR$/JavaScript/Demo/Demo50.html" />
+        <option value="$PROJECT_DIR$/Test/demo.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-100" />
+    <option name="y" value="70" />
+    <option name="width" value="1400" />
+    <option name="height" value="998" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaScript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaScript" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="SearchEverywhereHistoryKey" value="ckeckout&#9;null&#9;null&#10;callbacks_nav&#9;null&#9;null" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\WebStorm\Work\cpts_272_nn\js" />
+      <recent name="F:\WebStorm\Work\cpts_272_nn" />
+      <recent name="F:\WebStorm\Work\cpts_272_nn\images" />
+      <recent name="F:\WebStorm\Work" />
+      <recent name="F:\WebStorm\Work\charisma-master" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\WebStorm\Work\HTML5\28_T19李佶瑞02HTML作业" />
+      <recent name="F:\WebStorm\Work\HTML5" />
+      <recent name="F:\WebStorm\Work\JavaScript\Demo" />
+      <recent name="F:\WebStorm\Work" />
+      <recent name="F:\WebStorm\Work\HTML5\Demo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="53d32bbe-68f2-40bd-8184-6940d918c806" name="Default" comment="" />
+      <created>1512958240150</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1512958240150</updated>
+      <workItem from="1512958241803" duration="3431000" />
+      <workItem from="1512973042007" duration="9418000" />
+      <workItem from="1512992685784" duration="595000" />
+      <workItem from="1513050411353" duration="829000" />
+      <workItem from="1513054381270" duration="20055000" />
+      <workItem from="1513123600195" duration="292000" />
+      <workItem from="1513574944611" duration="4747000" />
+      <workItem from="1513729835763" duration="706000" />
+      <workItem from="1513857998411" duration="9161000" />
+      <workItem from="1514010954164" duration="10008000" />
+      <workItem from="1514087452746" duration="14535000" />
+      <workItem from="1514126957366" duration="594000" />
+      <workItem from="1514159971507" duration="2100000" />
+      <workItem from="1514275197132" duration="11575000" />
+      <workItem from="1514355530354" duration="10375000" />
+      <workItem from="1514372871794" duration="9853000" />
+      <workItem from="1514443474575" duration="13713000" />
+      <workItem from="1514505493705" duration="1586000" />
+      <workItem from="1514525015729" duration="10388000" />
+      <workItem from="1514545549712" duration="4020000" />
+      <workItem from="1514593409710" duration="19032000" />
+      <workItem from="1514632563698" duration="597000" />
+      <workItem from="1514702011681" duration="7403000" />
+      <workItem from="1514796718669" duration="786000" />
+      <workItem from="1514876900775" duration="11641000" />
+      <workItem from="1514978276432" duration="3730000" />
+      <workItem from="1515040561598" duration="598000" />
+      <workItem from="1515044552161" duration="19558000" />
+      <workItem from="1515213972820" duration="7841000" />
+      <workItem from="1515301810296" duration="14127000" />
+      <workItem from="1515320230955" duration="9296000" />
+      <workItem from="1515560076596" duration="991000" />
+      <workItem from="1515653733097" duration="17225000" />
+      <workItem from="1515716285411" duration="9598000" />
+      <workItem from="1515810165284" duration="22334000" />
+      <workItem from="1515844300635" duration="7866000" />
+      <workItem from="1516000520922" duration="7794000" />
+      <workItem from="1516014643933" duration="3754000" />
+      <workItem from="1516174322440" duration="6177000" />
+      <workItem from="1516321337673" duration="64000" />
+      <workItem from="1516580275101" duration="17767000" />
+      <workItem from="1516619904518" duration="10506000" />
+      <workItem from="1516752789502" duration="20403000" />
+      <workItem from="1516860141926" duration="3149000" />
+      <workItem from="1516925171484" duration="17863000" />
+      <workItem from="1516964806245" duration="10385000" />
+      <workItem from="1517012323144" duration="4361000" />
+      <workItem from="1517189692454" duration="8465000" />
+      <workItem from="1517224170517" duration="6269000" />
+      <workItem from="1517313928990" duration="7254000" />
+      <workItem from="1517356900502" duration="14650000" />
+      <workItem from="1517381962569" duration="6678000" />
+      <workItem from="1517529881201" duration="16547000" />
+      <workItem from="1517554690343" duration="5879000" />
+      <workItem from="1517626066767" duration="14271000" />
+      <workItem from="1517663802169" duration="1199000" />
+      <workItem from="1517722282404" duration="19963000" />
+      <workItem from="1517788848713" duration="693000" />
+      <workItem from="1518062344405" duration="14145000" />
+      <workItem from="1518187003365" duration="4117000" />
+      <workItem from="1519462934904" duration="15145000" />
+      <workItem from="1519538413154" duration="19576000" />
+      <workItem from="1519603138298" duration="28036000" />
+      <workItem from="1519646959147" duration="10323000" />
+      <workItem from="1519708185321" duration="26323000" />
+      <workItem from="1519776004889" duration="25679000" />
+      <workItem from="1519819994220" duration="13290000" />
+      <workItem from="1519878770026" duration="30183000" />
+      <workItem from="1519948989165" duration="6096000" />
+      <workItem from="1519971258643" duration="591000" />
+      <workItem from="1519992967271" duration="10058000" />
+      <workItem from="1520036434820" duration="24661000" />
+      <workItem from="1520083798978" duration="2956000" />
+      <workItem from="1520140362328" duration="24838000" />
+      <workItem from="1520207921875" duration="3430000" />
+      <workItem from="1520216097941" duration="16585000" />
+      <workItem from="1520248531602" duration="10143000" />
+      <workItem from="1520309761850" duration="31890000" />
+      <workItem from="1520381064882" duration="19456000" />
+      <workItem from="1520413700471" duration="1124000" />
+      <workItem from="1520425221068" duration="7658000" />
+      <workItem from="1520479396490" duration="15318000" />
+      <workItem from="1520553570162" duration="22973000" />
+      <workItem from="1520594639915" duration="4695000" />
+      <workItem from="1520642159552" duration="21736000" />
+      <workItem from="1520687972523" duration="5725000" />
+      <workItem from="1520746391968" duration="7049000" />
+      <workItem from="1520813693361" duration="17036000" />
+      <workItem from="1520989338101" duration="235000" />
+      <workItem from="1520990749362" duration="14631000" />
+      <workItem from="1521160315200" duration="5113000" />
+      <workItem from="1521166903689" duration="1038000" />
+      <workItem from="1521171010758" duration="9463000" />
+      <workItem from="1521417840862" duration="620000" />
+      <workItem from="1521451534753" duration="245000" />
+      <workItem from="1521546804641" duration="9865000" />
+      <workItem from="1521618326025" duration="2289000" />
+      <workItem from="1521690650619" duration="5109000" />
+      <workItem from="1522661478654" duration="30000" />
+      <workItem from="1523689346238" duration="549000" />
+      <workItem from="1523764170063" duration="2149000" />
+      <workItem from="1524036295672" duration="1353000" />
+      <workItem from="1524114522313" duration="585000" />
+      <workItem from="1524207603006" duration="167000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="988971000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14947917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo41.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="701">
+          <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo43.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/CSS/games.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/CSS/chat.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo45.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo44.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="52" column="40" lean-forward="false" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/CSS/register.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo49.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/CSS/leisure.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1078">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo48.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="947">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo47.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo46.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1107">
+          <caret line="41" column="36" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="87" column="16" lean-forward="false" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1917">
+          <caret line="71" column="44" lean-forward="false" selection-start-line="71" selection-start-column="44" selection-end-line="71" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/jquery.validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootStrap/CSS/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="6580" column="32" lean-forward="true" selection-start-line="6580" selection-start-column="32" selection-end-line="6580" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootStrap/JS/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootStrap/JS/jquery-1.10.2.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootStrap/Demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpts_272_nn/account.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpts_272_nn/products.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpts_272_nn/js/jquery.flexslider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21639">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpts_272_nn/js/easing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2104">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/charisma-master/Demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="30" column="52" lean-forward="true" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpts_272_nn/single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpts_272_nn/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpts_272_nn/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="379" column="21" lean-forward="false" selection-start-line="379" selection-start-column="21" selection-end-line="379" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpts_272_nn/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpts_272_nn/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="6373" column="13" lean-forward="false" selection-start-line="6373" selection-start-column="13" selection-end-line="6373" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpts_272_nn/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="659" column="1" lean-forward="false" selection-start-line="659" selection-start-column="1" selection-end-line="659" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpts_272_nn/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/CSS/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="242" column="20" lean-forward="true" selection-start-line="242" selection-start-column="20" selection-end-line="242" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/Demo/Demo24.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/Demo/Demo26.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/Demo/Demo28.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/Demo/Demo29.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/Demo/Demo30.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/Demo/Demo31.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/Demo/Demo33.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/Demo/Demo36.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/Demo/Demo38.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo51.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo52.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo53.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/Thelabel.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1107">
+          <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/JavaScript.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6426">
+          <caret line="238" column="7" lean-forward="false" selection-start-line="238" selection-start-column="5" selection-end-line="238" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo08.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo04.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="37" column="6" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo50.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="138" column="38" lean-forward="true" selection-start-line="138" selection-start-column="38" selection-end-line="138" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="796" column="103" lean-forward="false" selection-start-line="796" selection-start-column="103" selection-end-line="796" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/Demo/Demo54.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

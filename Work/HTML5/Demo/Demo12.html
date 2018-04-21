@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字体样式</title>
+    <style type="text/css">
+        body{font-family: Times,"Times New Roman","楷体";}
+        h1{font-size: 24px;font-style: italic;}
+        h1 span{font-style: oblique;font-weight: normal}
+        h2{font-size: 16px;font-style: normal}
+        p{font-size: 24px;}
+        p span{font-weight: bold}
+        /*字体属性顺序：字体风格-->字体粗细-->字体大小-->字体类型*/
+        p span{font:oblique bold 20px "楷体";}
+        p span{color: #F00}
+        /*使用rgba设置颜色和透明度*/
+        h1{color: rgba(0,0,255,0.5);font-size: 24px}
+        /*文本对齐(text)*/
+        h1{text-align: center}
+        h2{text-align: right}
+        /*段落行高(line)及首行缩进(text)*/
+        p{line-height: 28px; text-indent: 2em;}
+        /*文本装饰*/
+        .type a:nth-of-type(1){text-decoration: underline;}
+        .type a:nth-of-type(2){text-decoration: overline;}
+        .type a:nth-of-type(3){text-decoration: line-through;}
+        .type a:nth-of-type(4){text-decoration: none;}
+        .type2 img,span{vertical-align: middle;}
+        /*文本阴影：颜色 X轴位移 Y轴位移 模糊半径*/
+        h1{text-shadow: blue 10px 10px 1px;}
+    </style>
+</head>
+<body>
+    <h1>京东商城--<span>全部商品分类</span></h1>
+    <h2>图书，音像，电子书刊</h2>
+    <p><span>电子书刊</span>电子书 网络原创 数字杂志 多媒体图书书目<br>/
+    <span>音像</span>音乐 影视 教育音像<br>
+    <span>经管励志</span>经济 金融与投资 管理 励志与成功</p>
+    <h2>家用电器</h2>
+    <p><span>大家电</span>平板电视 空调 冰箱 DVD播放机<br>
+        <span>生活电器</span>净化器 电吹风 饮水机 电话机
+    </p>
+    <p class="type">
+        <a href="#">下划线：underline</a><br><br >
+        <a href="#">上划线：overline</a><br><br>
+        <a href="#">删除线：line-through</a><br><br>
+        <a href="#">无下划线：none</a><br>
+    </p>
+    <p class="type2">
+        <img src="../images/高原.jpg" height="129" width="121">
+        <span>图片与文本垂直居中对齐</span>
+    </p>
+<p></p>
+</body>
+</html>

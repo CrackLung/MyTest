@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>图书简介</title>
+    <!--<link rel="stylesheet" href="css/bookStyle.css">-->
+    <style>
+        *{margin: 0;padding: 0;}
+        body{
+            font-family: "微软雅黑";
+            font-size: 12px;
+            line-height: 28px;
+        }
+        #book{
+            margin: 5px auto 0 auto;
+            width: 650px;
+            overflow: hidden;
+        }
+        .imgLeft{
+            float:left;
+            width: 210px;
+        }
+        .imgLeft img{width: 200px;}
+        .textRight{
+            float: right;
+            width: 440px;
+        }
+        #book h1{font-size: 16px; line-height: 50px;}
+        .textRight dl{padding-left: 5em;}
+        .textRight dl dd{display: none;}
+        #jdPrice p{ display:inline;}
+
+    </style>
+</head>
+<body>
+<section id="book">
+    <div class="imgLeft"><img src="../images/store.jpg" alt="岛上书店"></div>
+    <div class="textRight">
+        <h1>岛上书店【荐书联盟推荐】[The Storied Life of A.J.Fikry]</h1>
+        <p class="intro">自营图书几十万畅销品种阶梯满减，抽奖赢魅蓝note3、JDRead阅读器！</p>
+        <p id="author">[美] 加·泽文（Gabrielle Zevin） 著；孙仲旭，李玉瑶 译</p>
+        <div class="price">
+            <div id="jdPrice">京东价： <span>￥24.10</span> [6.9折] <p>[定价：<span>￥35.00</span>]</p> (降价通知)</div>
+            <p id="mobilePrice">促销信息：<span>手机专享价</span> <span>￥9.90</span></p>
+            <dl>
+                <dt>以下促销可在购物车任选其一</dt>
+                <dd><span>加价购</span> 满99.00元另加6.18元即可在购物车换购热销商品</dd>
+                <dd><span>满减</span> 满100.00减20.00，满200.00减60.00，满300.00减100.00</dd>
+            </dl>
+            <p id="ticket">领 券：<span>105-6</span>  <span>200-16</span></p>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="../../JS/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('h1').css('color','blue');
+        $('.price').css({'background':'#efefef','padding':'5px'});
+        $('#author').css('color','#083499');
+        $('.intro,dt,dd').css('color','#ff0000');
+        $('*').css('font-weight','bold');
+        $('dt').click(function () {
+            $('dd').css('display','block');
+        });
+    });
+    
+    $(document).ready(function () {
+        $('.textRight p').css('color','red');
+        $('h1+p').css('text-decoration','underLine');
+        $('h1~p').css('text-decoration','underLine');
+
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3属性选择器的使用</title>
+    <style>
+        .demo a{
+            float: left;
+            display: block;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            text-align: center;
+            background: #AAC;
+            color: blue;
+            font: bold 20px/50px Arial;
+            margin-right: 5px;
+            text-decoration: none;
+            margin: 5px;
+        }
+        /*a标签含有id属性*/
+        a[id]{background: yellow}
+        /*a标签设置属性atrr,并且属性值为val*/
+        a[id=first]{background: red}
+        /*a标签设置属性atrr，并且属性值含有val*/
+        a[class*=links]{background: rebeccapurple}
+        /*a元素设置属性atrr，属性值以字符串val开头*/
+        a[href^=http]{background: #FAA53B}
+        /*a元素设置属性atrr，属性值以字符串val结尾*/
+        a[href$=jpg]{background: #AAAACC}
+    </style>
+</head>
+<body>
+    <p class="demo">
+        <a href="http://www.baidu.com" class="links item first" id="first">1</a>
+        <a href="" class="links active item " title="test website" target="_blank" >2</a>
+        <a href="Demo3.html" class="links item ">3</a>
+        <a href="Demo4.html" class="links item ">4</a>
+        <a href="Demo5.html" class="links item ">5</a>
+        <a href="efc" class="links item" title="website link">6</a>
+        <a href="../images/寰宇地理.jpg" class="links item">7</a>
+        <a href="../images/小雪初晴.jpg" class="links item">8</a>
+        <a href="../images/小雪初晴.jpg" class="links item">9</a>
+        <a href="../images/高原.jpg" class="linksitem last" id="last">10</a>
+    </p>
+</body>
+</html>

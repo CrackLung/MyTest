@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时函数</title>
+    <script type="text/javascript">
+        var num=0;
+        var Time;
+        function one() {
+          var a= document.getElementById("s");
+          a.innerHTML=(""+(++num));
+        }
+        function ones() {
+            Time=setTimeout('one()',1000)
+        }
+        function Two() {
+            clearTimeout(Time);
+        }function ones1() {
+            Time=setInterval('one()',1000)
+        }
+        function Two2() {
+            clearInterval(Time);
+        }
+    </script>
+</head>
+<body>
+<div id="s"></div>
+<button id="01" onclick="javascript:ones();">setTimeout函数</button>
+<button id="02" onclick="javascript:Two();">clearTimeout函数</button>
+<button id="03" onclick="javascript:ones1();">setInterval函数</button>
+<button id="04" onclick="javascript:Two2();">clearInterval函数</button>
+</body>
+</html>

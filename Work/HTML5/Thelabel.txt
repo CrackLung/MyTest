@@ -1,0 +1,314 @@
+第一单元：===============================
+<title>    描述网页标题标签
+<h1>~<h6>  标题标签
+<p>        段落标签
+<br/>      换行标签
+<hr/>      水平线标签
+<strong>   字体变粗
+<em>       文字倾斜
+&nbsp;     空格
+&gt;       >
+&lt;       <
+&quot;     ""
+&copy;     ©
+<img>      图片标签    属性：src图片地址  alt图像代替地址  title鼠标悬停提示文字  width height 图片高宽
+<a>        超链接标签  属性：href链接地址 "#"空链接  target目标窗口位置( _self(自身窗口), _blank(新建窗口)) name标记名
+
+第二单元：===============================
+<ul>       无序列表  加<li>前面有圆点
+<ol>       有序列表  加<li>前面有顺序标记
+<dl>       定义列表  <dt>起始  <dd>内容
+<table>    表格标签  里面创建<tr>行标签 再创建<th>表格标题标签和<tb>单元格标签   单元格属性：colspan(跨列) rowspan(跨行)
+<video>    视频元素  src路径  controls播放控件  width height 高宽  loop循环播放
+<audio>    音乐元素  src路径  controls播放控件  width height 高宽
+<source>   自动识别格式
+<header>   结构头部
+<footer>   结构脚部
+<section>  结构主体
+<iframe>   内联框架  name="#"结合<a target="#">使用
+
+第三单元：===============================
+<from>     表单标签  属性：action程序处理  method发送数据方法(get|post)
+<input>    type属性：text文本框  passWord密码框  checkbox复选框  radio单选按钮  submit提交按钮  reset重置按钮  file文件域
+                    email邮箱框  number数字框  url网址框  hidden隐藏域 image图片按钮 button普通按钮  search搜索框
+           size属性：表单框长度(行内有效)    maxlength属性：输入最大字符数
+           checked属性：指定按钮是否被选中
+           readonly只读  disabled禁用
+<select>   列表框和<option>来实现下拉列表  selected默认显示
+<textarea> 多行文本域    cols属性：文本域列的宽度   rows属性：文本域列的行数
+number     数字框min最小值  max最大值  step数字间隔  range滑条
+<label>    标注for属性指定鼠标点击文本时，焦点对应的表单元素
+placeholder文本框为空时提示
+required   规定文本框填写内容不能为空
+pattern    验证文本框输入内容g是否与自定义正则表达式相匹配
+
+第四单元：===============================
+行内样式   HTML标签用style属性设置CSS样式
+内部样式   写在<head>的<style>标签中  内容和样式在同一个HTML文件
+外部样式   单独CSS文件，内容和样式分离
+链接外部样式表  写在<head>里 <link href="文件名.css" rel="stylesheet" type="text/css"/>
+导入外部样式表  写在<head>里<style> 放入<@import url("文件名.css");>
+
+基本选择器：   三种同时存在同一个标签优先级，ID > .class > 标签
+标签选择器  写在<head>里<style type="text/css"> 例如 p{样式;}
+类选择器    写在<head>里<style type="text/css"> 例如 .class{样式;}
+ID选择器    写在<head>里<style type="text/css"> 例如 #id名{样式;}
+
+层次选择器 ：
+后代选择器     E F：{样式;}E是祖元素 F是后代元素 E包含F  F里更深层也会选中
+子选择器       E>F: {样式;}E是父类 F是子类 E包含F  只选F元素
+相邻兄弟选择器  E+F：{样式;}E为元素标识如类名，id名，元素名，F为元素，F下面同级同类第一个元素选中
+通用兄弟选择器  E~F：{样式;}E为元素标识如类名，id名，元素名，F为元素，F下面同级同类全部元素选中
+
+结构伪类选择器：    (even奇，odd偶)
+E:first-child     作为父元素的第一个子元素的元素E
+E:last-child      作为父元素的最后一个子元素的元素E
+E F:nth-child(n)  选择父元素E的第n个子元素F。其中n可以是整数（1，2，3）、关键字（even，odd）、可以是公式（2n+1）,而且n值起始值为1，而不是0.
+E F:nth-last-child(n)  选择父元素E的倒数第n个子元素F
+E:first-of-type   选择父元素内具有指定类型的第一个E元素
+E:last-of-type    选择父元素内具有指定类型的最后一个E元素
+E F：nth-of-type(n)    选择父元素内具有指定类型的第n个F元素
+
+属性选择器：
+E[attribute]        选择具有attribute属性的E元素。
+E[attribute=value]  选择具有attribute的E属性且属性值等于value的元素。
+E[attribute~=value] 选择具有attribute的E属性且属性值为一用空格分隔的字词列表，其中一个等于value的元素。
+E[attribute|=value] 选择具有att属性且属性值为以val开头并用连接符"-"分隔的字符串的E元素。
+E[attribute^=value]  匹配具有attribute属性、且值以value开头的E元素
+E[attribute$=value] 匹配具有attribute属性、且值以value结尾的E元素
+E[attribute*=value] 匹配具有attribute属性、且值中含有value的，属性值任意位置包含"value"E元素
+
+第五单元：===============================
+<span>        编辑文本标签
+
+字体样式：
+font-family   设置字体类型  英文字体要比中文字体在前，有空格的字体要加""
+font-size     设置字体大小
+font-style    设置字体风格  normal默认字体  italic斜体字体样式  oblique倾斜的字体样式
+font-weight   设置字体粗细  normal默认值  bold粗体  bolder更粗体  lighter更细
+
+字体属性：
+E{font:字体风格 字体粗细 字体大小 字体类型;}顺序严格
+
+排版文本：
+color           设置文本颜色  rgba(红0-255,绿0-255,蓝0-255,透明度0-10) #F00(原：#FF0000)
+text-align      设置元素水平对齐方式  属性：left排左边  right排右边  center水平居中 justify两端对齐文本效果(盒子文字居中：文字水平居中再加行高line-height即可)
+text-indent     设置首行文本缩进  "em"缩进字符
+line-height     设置文本行高
+text-decoration 设置文本装饰  属性：none默认值无下划线 underline下划线  overline上划线 line-through删除线
+vertical-align  设置垂直方向对齐方法 middle居中对齐
+text-shadow     设置文本阴影  颜色--> x轴 --> y轴 -->模糊范围
+letter-spacing  设置字符字母间隔
+
+超链接伪类：
+a:link          单击访问前的超链接样式
+a:visited       单击访问后的超链接样式
+a:hover         鼠标悬浮其上的超链接样式
+a:active        单击未释放的超链接样式
+
+列表样式：
+属性：
+list-style          表示在一个声明中设置所有列表的属性(一般设置图片都用list-style或list-style-type，先设none，再设background)
+list-style-type     none无标记符号，disc实心圆默认类型，circle空心圆，square实心正方形,decimal数字
+list-style-img      使用图片来替换列表项的标记
+list-style-position 设置在何处放置列表项的标记(如在ul层，或者在li层)
+
+列表样式属性值：
+none:       无标记符号
+disc:       实心圆，默认类型
+circle:     空心圆
+square：    实心正方形
+decimal:    数字
+
+背景样式：
+<div>       网页布局标签 有width宽,height高属性，还可以嵌套其他标签，属性
+
+背景属性：
+background-color    背景颜色
+background-image    背景图像  url(../图片路径)
+background-position 背景定位  Xpx,Ypx  X%,Y%, x,Y(水平(left,right)垂直(top,bottom))可自由组合
+background-repeat   背景重复  属性：repeat-x水平平铺，repeat-y垂直平铺，repeat水平垂直两个方向平铺，no-repeat只显示一次
+background          背景      属性一起赋：颜色 ，路径 ， 定位 ， 平铺
+background-size     背景尺寸   (auto保持原样，默认值  percentage百分值，相对于元素而言) (cover放大填充,结合background-position：center使用)
+                              (contain 保持本身比例，缩放到背景区域)
+
+渐变(加background：)：
+linear-gradient(定位,颜色1,颜色2)   线性渐变(直线过渡)
+radial-gradient(颜色1,颜色2)       径向渐变(圆形，椭圆)
+定位：
+to top       从底部到顶部
+to bottom    从顶部到底部
+to left      从右到左
+to right     从左到右
+to top left  从右下方到左上方
+to top right 从左下方到右上方
+to bottom left  从右上方到左下方
+to bottom right 从左上方到右下方
+
+第六单元：===============================
+border       边框  属性： color(颜色),width(粗细),style(样式)
+
+颜色：              (上色顺序：上 ==> 右 ==> 下 ==> 左)
+border-定位-color   定位(top上 , bottom下 , right右 , left左)
+border-color        赋一种颜色为四条边框同一颜色，赋两种颜色为上下同一颜色，左右同一颜色，赋三种那边没颜色就找对边颜色，赋四种按顺序
+
+粗细：              属性值：thin(细边框) medium(默认值) thick(粗边款)  (赋值顺序：上 ==> 右 ==> 下 ==> 左)
+border-定位-width   定位(top上 , bottom下 , right右 , left左)
+border-width        赋一个像素值为四条边框同一粗细，赋两个像素值为上下同一粗细，左右同一粗细，赋三个像素值那边没粗细就找对边粗细，赋四种按顺序
+
+样式：              常用属性: none(无边框) dotted(点线边框) dashed(虚线边框) soild(实线边框)  不常用：...
+border-定位-style   定位(top上 , bottom下 , right右 , left左)
+border-style        赋一个属性值为四条边框同一样式，赋两个属性值为上下同一样式，左右同一样式，赋三个属性值那边没样式就找对边样式，赋四种按顺序
+
+简写属性：
+border-定位：粗细值   颜色值   样式值  定位(top上 , bottom下 , right右 , left左)
+border：     粗细值   颜色值   样式值  四条边一起赋
+
+margin        外边距
+
+margin-定位   定位(top上 , bottom下 , right右 , left左)(特殊值auto，设置盒子在它父容器居中显示)
+margin        赋一个像素值为四条外边框同一边距，赋两个像素值为上下同一边距，左右同一边距，赋三个那边没边距就找对边边距，赋四种按顺序
+
+padding       内边距
+
+padding-定位  定位(top上 , bottom下 , right右 , left左)
+padding       赋一个像素值为四条外边框同一边距，赋两个像素值为上下同一边距，左右同一边距，赋三个那边没边距就找对边边距，赋四种按顺序
+
+并集选择器：   任何形式的选择器(包括标签选择器，类选择器，ID选择器)都可以作为并集选择器的一部分，通过逗号连接
+
+盒子模型内盒总尺寸=border(上下/左右)+padding(上下/左右)+内容宽/高
+盒子模型外盒总尺寸=border(上下/左右)+padding(上下/左右)+margin(上下/左右)+内容宽/高
+
+box-sizing   拯救布局
+
+属性值：
+border-box:  盒子宽高等于元素内容宽高，无需计算
+inherit:     元素继承父元素的盒子模型模式
+content-box: 默认值，需要计算
+
+border-radius  圆角属性   顺时针赋值(左上，右上，右下，左下)
+
+length(1):     取一个值，四角相等
+length(2):     取两个值，对角相等 左上等于右下  右上等于左下
+length(3):     取三个值，第一个值是左上，第二个值右上等于左下，第三个值右下
+length(4):     按顺序取值
+
+圆形：
+1.元素宽高一致
+2.圆角设置为元素宽度一半或直接设置50%
+
+半圆：
+上半圆：元素的宽是高的2倍，左右上方圆角值等于元素的高，左右下方取0
+下半圆：元素的宽是高的2倍，左右下方圆角值等于元素的高，左右上方取0
+左半圆：元素的高是宽的2倍，左上左下圆角值等于元素的宽，右上右下取0
+右半圆：元素的高是宽的2倍，右上右下圆角值等于元素的宽，左上左下取0
+
+扇形：
+元素高宽，圆角值相同，圆角取值位置不同
+
+box-shadow  盒子阴影(五个参数一起赋，可以同时设置多个阴影，每层阴影用逗号隔开)
+属性：
+inset：     阴影类型 可选值，不设为默认投影方式是外阴影，设置投影方式是内阴影
+x-offset:   X轴位移，正数阴影在右，负数阴影在左
+y-offset:   Y轴位移，正数阴影在对象底部，负数阴影在对象顶部
+blue-radius:阴影模糊半径 可选值
+color:      阴影颜色
+
+第七单元：===============================
+display:    指定HTML标签的显示方式
+属性：
+block:      块级元素的默认值
+inline:     行内元素默认值
+inline-block: 行内块元素，元素既块，也具行
+none:       设置元素不会显示
+
+float      指定元素在父元素那个方向浮动
+属性：
+left       元素向左浮动
+right      元素向右浮动
+none       默认值，元素不浮动
+
+clear      指定元素那一侧不予许其他浮动元素
+属性：
+left       左侧不允许
+right      右侧不允许
+both       左，右不允许
+none       默认值，允许两侧可以出现
+
+overflow   解决浮动引发的问题
+属性：
+visible    默认值，内容会呈现在盒子之外
+hidden     内容会被修剪，并且其余内容不可见
+scroll     内容会被修剪，以滚动条查看其余内容
+auto       如果内容被修剪，则以滚动条查看其余内容
+
+伪类after  class:after  选择类名是class后面的元素并添加样式
+
+第八单元：===============================
+position   指定盒子位置
+属性：      (配合 top ,left ,bottom ,right 进行偏移)
+static     默认值，没有定位，元素按照标准文档流进行布局
+relative   相对定位，使盒子相对于原来位置进行偏移，仍至于标准文档流，(盒子偏移，原位置不动，其它盒子变动偏移盒子跟着变动)
+absolute   绝对定位，以最近定位父盒子为基准进行偏移，(无定位父盒子则以浏览器定位，变动其它盒子无影响，原有位置不存在)
+fixed      固定定位，以浏览器窗口为基准进行定位(拖动滚动条保持位置不变)
+
+z-index    用于调整元素定位时重叠的上下位置
+
+opacity=x  x值为0-1，值越小越透明
+filter:alpha(opacity=x)  x值为0-100,值越小越透明
+(两者区别不同浏览器兼容问题，通常两者都设)
+
+第九单元：===============================
+(注意：不同浏览器版本对变形有不同的前缀，在transform前面加-前缀-)
+transform    变形(可以多个属性，用逗号隔开)
+
+属性：
+translate()  平移元素，基于X,Y坐标重新定位元素
+scale()      缩放函数，任意元素尺寸发生变化，默认值为1,0~0.99缩小，大于1变大
+rotate()     旋转函数，取度数值（deg）
+skew()       倾斜函数，取度数值（deg）取值（X,Y）只取一个值那个轴倾斜，另一个轴不变
+
+transition   过渡
+
+属性：(属性之间不用逗号隔开)
+transition-property   指定过渡或动态模拟的CSS属性
+transition-duration   指定完成过渡所需时间
+transition-delay      指定过渡开始出现的延长时间
+transition-timing-function 指定过渡函数
+函数：
+ease     过渡速度由快到慢，  (默认值)
+linear   过渡速度恒速        (匀速运动)
+ease-in  过渡速度由慢到快    (渐显效果)
+ease-out 过渡速度越来越慢    (渐隐效果)
+ease-in-out 过渡速度先快后慢 (渐显渐隐效果)
+
+前缀：
+IE 9               -ms-
+Firefox 3.5至15.0  -moz-
+Chrome 4.0         -webkit-
+Opera 10.5         -o-
+Safari 3.1         -webkit-
+
+浏览器支持的CSS属性：https://www.caniuse.com
+
+animation   实现动画
+
+@keyframes  关键帧
+
+例如：
+@keyframes 动画名{
+    0%(第一帧){CSS样式;}
+    n%(第n帧){CSS样式;}
+}
+通过：animation调用
+
+属性：
+animation-name:            由@keyframes创建的动画名称
+animation-duration:        过渡时间
+animation-timing-function: 过渡方式(具体参照transition的属性)
+animation-delay:           延迟时间
+animation-iteration-count: 动画播放次数,默认值为1, 特殊值infinite,表示动画无限次播放
+animation-direction:       动画播放方向，normal表示动画每次都是循环向前播放，alternate表示偶数次向前播放，奇数反方向播放
+animation-play-state:      动画播放状态，running将暂停的动画重新播放，paused将正在播放的元素动画停下
+animation-fill-mode:       定义动画开始之前和结束之后发生的操作，forwards表示动画结束后继续应用最后关键帧的位置，backwards表示会在向元素应用动画样式时迅速运用
+                           动画的初始帧，both表示元素动画同时具有forwards和backwards的效果。

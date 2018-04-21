@@ -1,0 +1,926 @@
+第1单元=====================================
+javaScript的组成：
+    01.ECMAScript: 开放的，标准的脚本语言规范。
+    02.BOM       : 浏览器对象模型，独立于内容与浏览器进行交互的对象
+    03.DOM       : 文档对象模型，用来访问和操纵HTML文档
+
+javaScript的基本结构：
+
+    <script type="text/Javascript">
+        Javascript语句;
+    </script>
+
+    01.type是script标签的属性，用来指定文本使用的语言类型为text/Javascript(HTML5可省略type属性)。
+    02.document.write()用来向页面输出可以包含HTML标签的内容。
+
+javaScript的执行原理：
+    01.浏览器客户端向服务器发送请求。
+    02.服务器将含有javaScript的HTML文件处理页面发送到浏览器客户端
+    03.浏览器客户端从上至下逐条解析HTML标签和javaScript。
+    04.好处是下载一次即可，并且javaScript程序由浏览器客户端执行，不是服务器执行。
+
+应用javaScript的方式：
+    01.内部javaScript文件：直接使用<script>标签将javaScript代码加入HTML文档中(这种方式适用于javaScript代码较少的情况)。
+    02.外部javaScript文件：将javaScript代码放在以.js扩展名的文件，然后在<script>标签的'src'属性引用文件路径(适用于javaScript代码在页面重复使用)。
+    03.直接在HTML标签：     直接在标签中写javaScript代码，仅用于当前标签(适用于极少代码，实际开发应用较少)。
+
+变量的声明(使用关键字var声明)：
+    01.javaScript变量命名与java变量命名规则相同,即由数字，字母，下划线和'$'符号组成，首字母不能为数字，不能用关键字命名。
+    02.javaScript区分大小写。
+    03.javaScript是弱类型语言，允许不声明变量直接使用，系统将自动声明该变量。
+
+数据类型('typeof()'用于判断一个值或变量的数据类型)：
+    01.undefined(未定义类型)
+    02.null(空类型)
+    03.number(数值类型)
+    04.String(字符串类型)
+    05.boolean(布尔类型)
+
+操作String对象常用方法：
+    01.indexOf(str,index): 查找某个字符在字符串首次出现的位置,返回-1即不存在或不在该位置
+    02.charAt(index)     : 返回指定位置字符
+    03.toLowerCase()     : 把字符串转为小写
+    04.toUpperCase()     : 把字符串转为大写
+    05.substring(index1,index2): 返回指定索引index1,index2之间的字符串，不包含index2对应字符
+
+数组常用属性与方法：
+    01.length : 设置或返回数字元素的数目。
+    02.join() : 把数组元素放在一个字符串，通过分隔符隔开。
+    03.sort() : 对数组进行排序
+    04.push() : 向数组末尾添加新元素，并返回新长度
+    05.concat(): 方法用于连接两个或多个数组,该方法不会改变现有的数组，而仅仅会返回被连接数组的一个副本。
+
+运算符号：
+    01.算术运算符号：+， -， *， /， %， ++， --
+    02.比较运算符：  >， <， >=，<=，==，!==，===，!==
+    03.逻辑运算符：  &&，||，!
+    04.赋值运算符：  =，+=，-=
+
+逻辑控制语句：
+    01.条件结构(可省略大括号)：
+        if(表达式){                  switch(){
+            Javascript语句;            case 值1:
+        }else{                          Javascript语句;
+            Javascript语句;              back;
+        }                              default:
+                                         Javascript语句;
+                                         back;
+                                      }
+
+    02.循环结构：
+        for(初始值;条件;增量或减量){      while(条件){             do{                  for(变量 in 对象){//一般用于遍历Map集合之类复杂的存储方法
+          //Javascript语句;              //Javascript语句;        //Javascript语句;    //Javascript语句;
+        }                               }                        }while(条件);        }
+
+常用系统函数：
+    01.parseInt()   ：返回字符串有效的整数数字，字符串开头不是数字，则返回NaN。
+    02.parseFloat() ：返回字符串有效的数字(包括小数)，字符串开头不是数字，则返回NaN。
+    03.isNaN()      ：检查其参数是否是非数字，非数字返回false,否则放回true。
+自定义函数：
+    function 函数名(参数,...){
+        //Javascript语句;
+        //return 返回值;(可选)
+    }
+
+常见的事件：
+    01.onload     : 页面加载完成时立即发生。
+    02.onlick     : 鼠标点击某个对象。
+    03.onmouseover: 鼠标指针移动到某元素上。
+    04.onkeydown  : 某个键盘按键按下。
+    05.onchange   : 域的内容被改变。
+
+第2单元=====================================
+BOM浏览器对象模型
+
+window对象:
+    1.常用属性：
+        01.history  : 有关客户访问过的URL的信息。
+        02.location : 有关当前URL的信息。
+        03.screen   : 只读属性，包含有关客户端显示屏幕的信息。
+
+    2.常用方法：
+        01.alert()  : 警告对话框。
+        02.prompt() : 提示对话框。
+        03.confirm(): 确认对话框。
+        04.close()  : 关闭浏览器。
+        05.open()   : 打开新浏览器窗口。
+        06.setTimeout() : 在指定毫秒后调用函数或计算表达式(一次性)。
+        07.setInterval(): 在指定毫秒后调用函数或计算表达式(循环)。
+
+    3.窗口特征属性(在open('参数')的参数里设置)：
+        01.height,width : 窗口高宽
+        02.left,top     : 窗口位置
+        03.toolbar=yes|no|1|0    : 是否显示浏览器的工具栏，默认yes。
+        04.scrollbars=yes|no|1|0 : 是否显示滚动条，默认yes。
+        05.location=yes|no|1|0   : 是否显示地址栏，默认yes。
+        06.status=yes|no|1|0     : 是否添加状态栏，默认yes。
+        07.menubar=yes|no|1|0    : 是否显示菜单栏，默认yes。
+        08.resizable=yes|no|1|0  : 窗口是否可调节尺寸，默认yes。
+        09.titlebar=yes|no|1|0   : 是否显示标题栏，默认yes。
+        10.fullscreen=yes|no|1|0 : 是否使用全屏模式显示浏览器，默认是no。
+
+history对象：
+    1.方法：
+        01.back()    : 加载history对象列表中的前一个URL。
+        02.forward() : 加载history对象列表中的后一个URL。
+        03.go()      : 加载history对象列表中的某个具体URL 括号内参数是整数则加载前面的网页，负数则加载后面的网页(整数向前，负数向后)。
+
+location对象：
+    1.属性：
+        01.host()    : 设置或返回主机名和当前URL端口号。
+        02.hostname(): 设置或返回主机名。
+        03.href()    : 设置或返回完整的URL。
+    2.方法：
+        01.reload()  : 重新加载当前文档。
+        02.replace() : 用新文档替代当前文档。
+
+document对象：
+    1.属性：
+        01.referrer  : 返回载入当前文档的URL。
+        02.URL       : 返回当前文档的URL。
+    2.方法：
+        01.getElementById()      : 返回指定id的第一个对象的引用。
+        02.getElementByName()    : 返回指定名称的对象集合。
+        03.getElementByTagName() : 返回指定标签名的对象的集合
+        04.write()               : 向文档写文本，HTML表达式或javaScript代码
+        05.innerText，innerHTML  : 向节点写入内容，innerHTML可以解析标签及属性，javaScript语句
+
+Date对象：
+    1.创建：
+        var 实例 = new Date(参数);
+    2.方法：
+        01.getDate()   : 返回一个月中的每一天，其值为1~31。
+        02.getDay()    : 返回星期中的每一天，其值为0~6。
+        03.getHours()  : 返回小时数，其值为0~23。
+        04.getMinutes(): 返回分钟数，其值为0~59。
+        05.getSeconds(): 返回秒数，其值为0~59。
+        06.getMonth()  : 返回月份，其值为0~11。
+        07.getFullYear(): 返回年份，其值为四位数。
+        08.getYear()   : 返回年份，其值为二位数。
+        09.getTime()   : 返回某一时刻（1970年1月1日）以来的毫秒数。
+
+Math对象：
+    1.常用方法：
+        01.ceil()  : 对数进行上舍入。
+        02.floor() : 对数进行下舍入。
+        03.round() : 把数四舍五入为最接近的数。
+        04.random(): 返回0~1中的随机数。
+
+定时函数：
+    01.setTimeout() : 用于在指定的毫秒后调用函数或计算机表达式(一次)。
+    clearTimeout()  : 清除setTimeout()函数。
+    02.setInterval(): 可按照指定周期(以毫秒数)来调用函数或计算表达式(循环)。
+    clearInterval()  : 清除setInterval()函数。
+
+第3单元=====================================
+DOM文档对象模型
+
+    1.DOM操作分类
+        01.DOM Core(核心)任何一种支持DOM的编程语言都可以使用它 例如:document.getElementById()之类等等。
+        02.HTML-DOM : 例如：document.froms，获取表单对象
+        03.CSS-DOM  :作用在于获取和设置style对象的各种属性 例如：element.style.color='red'
+
+    2.访问节点
+        01.使用getElementById()系列方法访问指定节点
+        02.根据层次关系访问节点：
+            01.parentNode : 返回节点的父节点。
+            02.childNodes : 返回子节点集合，childNodes[i]。
+            03.firstChild : 返回节点的第一个子节点。
+            04.lastChild  : 返回节点的最后一个子节点。
+            05.nextSibling: 下一个节点。
+            06.previousSibling : 上一个节点。
+            以属性上对空行，换行会当成文本节点。
+            01.firstElementChild  : 返回节点的第一个子节点。
+            02.lastElementChild   : 返回节点的最后一个子节点。
+            03.nextElementSibling : 下一个节点。
+            04.previousElementSibling: 上一个节点。
+
+            例如获取节点时：parent.nextElementSibling||parent.nextSibling
+
+    3.节点信息
+        01.nodeName : 节点名称(文本节点名称永远是#text，文档节点的名永远是#document)。
+        02.nodeValue: 节点值。
+        03.nodeType : 节点类型。
+        节点类型：           NodeType值
+            01.元素element    1
+            02.属性attr       2
+            01.文本text       3
+            01.注释comments   8
+            01.文档document   9
+
+    4.操作节点
+        01.getAttribute('属性名') : 用来获取属性的值。
+        02.setAttribute('属性名','属性值') :  用来设置属性的值。
+
+    5.创建和插入节点
+        01.createElement(tagName) : 创建一个标签名为tagName的新元素标签。
+        02.A.appendChile(B)       : 把B节点追加至A节点的末尾。
+        03.insertBefore(A,B)      : 把A节点插入B节点之前,B为可选项。
+        04.cloneNode(deep)        : 复制某个指定的节点,deep为布尔值(为true复制该节点及其所有子节点，为false只复制该节点和其属性)。
+
+    6.删除和替换节点
+        01.removeChild(node)  : 删除指定节点。
+        02.replaceChild(newNode,oldNode) : 用其他节点替换指定节点。
+
+    7.操作节点样式
+        1.style属性(只能获得内联样式的属性值，无法获取内部样式表与外部样式表的属性值)
+            语法：HTML元素.style.样式属性='值';
+            例如：document.getElementById('id名').style.color='#ff0000';
+        常用事件：
+            01.onclick     : 当用户单击某个对象时调用事件。
+            02.onmouseover : 鼠标指针移到某元素之上。
+            03.onmouseout  : 鼠标指针移到某元素移开。
+            04.onmousedown : 鼠标按钮被按下。
+        2.className属性：
+            作用：可设置或返回元素的class样式。
+            语法：HTML元素.className='样式名称';
+
+    8.获取元素的样式
+        1.currentStyle对象：
+            语法：HTML元素.currentStyle.样式属性;
+            局限：只能在IE浏览器能获取样式属性的值，其它浏览器无效。
+            解决：DOM提供一个getComputedStyle()方法获取样式属性的值，而getComputedStyle()方法在IE无效，其它浏览器有效
+            语法：document.defaultView.getComputedStyle(元素,null).属性。
+
+    9.获取元素位置：
+        1.属性：
+            01.offsetLeft   : 返回当前元素左边界到它上级元素的左边界的距离，只读属性。
+            02.offsetTop    : 返回当前元素上边界到它上级元素的上边界的距离，只读属性。
+            03.offsetHeight : 返回元素的高度。
+            04.offsetWidth  : 返回元素的宽度。
+            05.offsetParent : 返回元素的偏移容器，即对最近的动态定位的包含元素的引用。
+            06.scrollTop    : 返回匹配元素的滚动条的垂直位置。
+            07.scrollLeft   : 返回匹配元素的滚动条的水平位置。
+            08.clientWidth  : 返回元素可见宽度。
+            08.clientHeight : 返回元素可见高度。
+
+            例如：获取滚动条在窗口中滚动的距离
+            语法：document.documentElement.scrollTop;     或者  document.body.scrollTop;(Chrome浏览器只认这种)
+                  document.documentElement.scrollLeft;         document.body.scrollLeft;
+
+            解决：var sTop=document.documentElement.scrollTop||document.body.scrollTop;
+
+第4单元=====================================
+1.object:
+    01.作用：一种复杂的数据类型，该类型实例化的对象时一组数据和功能的集合。
+    02.区别：null表示无值，使用typeof运算符判断数据类型时不会返回null这个类型。
+            声明变量，未赋值,则变量默认为null值,但返回的是undefined。
+            变量是为了保存对象，而修改其值默认的初始值为null，则返回object。
+
+2.对象：
+    01.在js中，对象拥有属性和方法的数据
+    02.属性是与对象相关的值。
+    03.方法是能够在对象上执行的动作。
+
+3.创建对象：
+    01.内置对象：例如 Date,Array,String等
+    02.自定义对象：
+        语法：var 对象名称=new Object();
+
+        基于Object对象方式：                       使用字面量赋值方式：
+            var 对象名=new Object();                 var 对象名={
+             对象名.属性名='属性值';                      属性名:'属性值',
+             对象名.方法名=function () {                 方法名:function(){
+                 //执行javaScript代码;                       //执行javaScript代码;
+             }                                           }
+                                                      }
+
+4.构造函数：
+    注意点：按照惯例，构造函数始终都应该以一个大写字母开头，而非构造函数以一个小写字母开头。
+    01.创建自定义构造函数：
+
+        //这种构造函数每个方法都要在实例上重新创建一遍 ---------> //把方法定义转移到构造外部来解决这个问题(新问题：这个方法像全局函数，但只能为一个对象的实例所用)
+        function 对象名(参数){                                function 对象名(参数){
+            this.属性名=参数;                                    this.属性名=参数;
+            this.方法名=function 方法名(){                       this.方法名=方法名;
+               //执行javaScript代码;                          }
+            }                                                function 方法名(){
+        }                                                       //执行javaScript代码;
+        var 实例名=new 对象名(参数);                           }
+        实例名.属性名;                                        var 实例名=new 对象名(参数);
+        实例名.方法名();                                      实例名.属性名;
+                                                             实例名.方法名();
+
+5.原型对象：
+    01.prototype属性: 是一个指针，指向对象，prototype就是通过调用构造函数而创建的那个对象实例的原型对象
+                    (使用原型的好处：让所有对象实例共享它所有属性和方法，不必在构造函数定义对象实例的信息)。
+    02.constructor属性: 在默认的情况下，所有原型对象都会自动获取一个constructor属性，这个属性包含一个指向prototype属性所在函数指针。
+    03._proto_内部属性: 当调用构造函数创建一个实例后，该实例内部将包含一个指针指向构造函数的原型对象。
+
+    示例：
+        function 函数名(){
+            //内容为空;
+        }
+        函数名.prototype.属性='属性值';
+        函数名.prototype.方法=function(){
+            //执行javaScript代码;
+        }
+        var 实例1=new 函数名();
+        var 实例2=new 函数名();
+        实例1.属性='属性值';
+        实例2.方法();
+
+    注意点：
+        01.实例1与实例2的内部属性仅仅指向原型对象，与构造无直接关系。
+        02.实例可以访问保存原型中的值，但不能重写原型中的值。
+        03.当实例读取属性的值时，会先在实例上搜索属性，如果实例存在这个属性，则返回属性值不必搜索原型，假如在实例没有发现该属性，就会继续搜索原型。
+
+    关系：
+        构造函数 <----┐  ┌---> 原型对象(函数名.prototype) <-----┐   实例
+        prototype ---└--┘----constructor                      └-- _proto_
+                               属性：属性值x
+                               方法：function
+
+6.原型链：
+    01.详解：在javaScript中，每个构造函数都拥有一个原型对象，原型对象都包含一个指向构造函数的指针(constructor),实例都包含一个指向原型对象的内部指针(_proto_)。
+    02.示例：
+         function Humans() {
+                this.foot=2;
+            }
+            Humans.prototype.getFoot=function () {
+                return this.foot;
+            }
+            function Man() {
+                this.head=1;
+            }
+            Man.prototype=new  Humans();//Man.prototype原型对象等于Humans对象的实例，此时Man.prototype就有_proto_内部属性指向Humans.prototype原型对象。
+            Man.prototype.getHead=function () {
+                return this.head;
+            }
+            var man1=new Man();
+            alert(man1.getHead());//1
+            alert(man1 instanceof Object);//true
+            alert(man1 instanceof Humans);//true
+            alert(man1 instanceof Man);//true
+
+    03.关系：
+                                                                                   ┌----------------------------┐
+        Humans  <----┐  ┌---> 原型对象(Humans.prototype) <-----┐   原型对象(Man.prototype)<-----┐   Man           |     man1
+        prototype ---└--┘----constructor                      └-- _proto_                     └-- prototype      └--  _proto_
+                               属性：属性值                         属性：属性值                                        属性：属性值
+                               方法：function                      方法：function                                      方法：function
+
+    注意点：
+        01.所有的引用类型默认都继承了Object，而这个继承也是通过原型链实现的，所有函数默认原型都是Object的实例。
+        02.给原型添加方法的代码一定要放在替换原型的语句之后。
+
+7.借用构造函数：
+    问题(原型链)：
+        所有实例都会共享父类型的属性，但是某一实例改动自己的属性，相当于父类型的所有实例的同名属性的值被改动。
+        在创建子类型实例时，不能向父类型构造函数中传递参数。
+    解决：
+        解决原型中包含引用类型值所带来的问题时，使用借用构造函数。
+
+    01.详解：子类型构造函数的内部调用父类型构造函数，通过apply()或call()方法调用父类型的构造函数。
+    02.语法：
+        apply([thisObj[,argArray]]) //应用某一对象的一个方法，用另一个对象替换当前对象。
+        call([thisObj[,arg1[, [,argN]]]]) //调用一个对象的一个方法，以另一个对象替换当前对象。
+    03.区别：
+
+8.组合继承：
+    01.解释：组合继承有时也叫做伪经典继承，指的是将原型链和借用构造函数的技术组合在一块。
+    02.实例：
+    function One(name) {
+            this.name=name;
+            this.clothing=['153','465','898'];
+        }
+        One.prototype.sayName=function () {
+            alert(this.name);
+        }
+        function Two(name,age) {
+            One.call(this,name);
+            this.age=age;
+        }
+        Two.prototype=new One();
+        Two.prototype.sayAge=function () {
+            alert(this.age);
+        };
+        var theer=new Two('mary',11);
+        theer.clothing.push('97867');
+        alert(theer.clothing);
+        theer.sayAge();
+        theer.sayName();
+        var theer1=new Two('mhjk',15);
+        alert(theer1.clothing);
+        theer1.sayAge();
+        theer1.sayName();
+
+第5单元=====================================
+1.$(document).ready():页面载入事件。
+    01.执行时机：网页中所有DOM文档结构绘制完毕后即可执行，图片，Flash，视频等与DOM元素关联的内容并没有加载完毕。
+    02.编写个数：同一页面能同时编写多个。
+    03.简写语法：
+        $(document).ready(function(){      或者         $(function(){
+        //执行代码;                                        //执行代码;
+        });                                             });
+
+     注意点：同一页面中使用多个库文件，会引起变量冲突。
+     解决： 使用jQuery.noConflict()方法解决对变量$的jQuery的控制权。
+
+2.jQuery语法结构：
+    语法:$(selector).action();
+    01.工厂函数$():
+        美元符号"$"等价于jQuery,即$()=jQuery()，$()的作用是将DOM对象转化为jQuery对象。
+    02.选择器：
+        如标签选择器，类选择器，ID选择器和后代选择器等
+        例如：
+            $('#userName'); //获取DOM中id为userName的元素。
+            $('div');       //获取DOM中所有div元素。
+            $('.content');  //获取DOM中class为content的元素。
+    03.方法action():
+        如：鼠标事件，键盘事件和表单事件。
+    04.addClass()方法和css()方法：
+        addClass()方法
+        语法：jQuery对象.addClass([样式名]) //样式名可以是一个，也可以多个，样式名需要用空格隔开，添加class为current的类样式时，类名无需加"."。
+        作用：向被选中元素添加一个或多个类样式。
+        css()方法
+        语法：
+            css("属性","属性值");//设置一个CSS属性
+            css({"属性1":"属性值1","属性2":"属性值2"...});//同时设置多个CSS属性
+        作用：为匹配的元素添加CSS样式。
+
+3.jQuery程序的代码风格：
+    01."$"的使用：
+        无论是页面元素的选择器，还是功能函数的前缀，都必须使用该符号。
+    02.链式操作：
+        为了不必要的重复代码，大多数jQuery代码采用一种链式编程模式，它可以对一个对象进行多重操作，并将操作结果返回给对象。
+    03.隐式迭代：
+        传统js写法中，使用getElement系列方法获取的集合要遍历才能使用，而jQuery则不需要遍历所有元素，可以直接设置元素的样式，这就是隐式迭代。
+
+4.jQuery对象：
+    01.解释：jQuery对象就是通过jQuery包装DOM对象后产生的对象，它能够使用jQuery中方法。
+    02.语法：
+        $('#title').html(); //获取id为title的元素内的HTML代码。
+        等同于
+        document.getElementById("title").innerHTML;
+    注意点：jQuery对象无法直接使用DOM对象的任何方法，而DOM对象也不能使用jQuery里的方法。
+
+    03.jQuery对象与DOM对象的相互转换：
+        语法:
+            获取对象为jQuery对象：var $variable=jQuery对象;
+            获取对象为DOM对象：var variable=DOM对象;
+
+        示例：
+            jQuery对象转换DOM对象(有两个方法可以获取下标，即[index],get(index))：
+            var $txtName=$("#txtName"); // jQuery对象
+            var txtName=$txtName[0];   // DOM对象
+            alert(txtName.checked)      // 检测这个checkbox是否被选中
+            注意点：这种转换实际开发不多见，除非使用DOM对象特有成员，如outerHTML属性，该属性可以可以输出DOM对象完整的HTML代码，而jQuery并没有直接提供。
+            DOM对象转换成jQuery对象：
+            var txtName=document.getElementById("txtName"); //DOM对象
+            var $txtName=$(txtName);
+            注意点：转换后，可以任意使用jQuery中方法。
+
+5.jQuery特有方法：
+    01.next()方法：可以获得匹配元素集合中每个元素其后紧邻的同辈元素。
+    02.show()和hide()可以设置元素的显示和隐藏。
+
+第6单元=====================================
+1.jQuery选择器：
+    01.解释：jQuery选择器获取元素后，为该元素添加的是行为，使页面交互更加丰富多彩。
+    02.优势：
+        简洁写法：如：$('id')用来代替document.getElementById()函数等
+        完善的处理机制
+
+2.基本选择器：
+    01.标签选择器：   匹配指定的标签名元素              如：$('h2')选取所有h2元素。
+    02.类选择器：     匹配指定的class元素              如：$('.title')选取所有class为title的元素。
+    03.id选择器：     匹配指定的id元素                 如：$('#title')选取所有id为title元素。
+    04.并集选择器：   将每个选择器匹配的元素合并一起返回，如：$('div,.title,#title')选取所有div元素,class为title,id为title元素。
+    05.全局选择器：   匹配所有元素                      如：$('*')选取所有元素。
+
+3.层次选择器：
+    01.后代选择器：root offspring  选取root元素里的所有offspring(后代)元素  如：$("#menu span")选取#menu下所有的<span>元素
+    02.子选择器：  parent>child    选取parent元素下的child(子)元素。       如：$("#menu>span")选取#menu下所有的<span>元素
+    03.相邻元素选择器：prev+next    选取紧邻prev之后的next元素              如：$("h2+dl")选取紧邻h2元素之后的同辈元素dl。(可用next()方法代替)
+    04.同辈元素选择器：prev~sibings 选取prev元素之后的所有sibings(同辈)元素  如：$("h2~dl")选取h2元素之后所有的同辈元素dl。(可用nextAll()方法代替)
+
+4. 属性选择器：
+    01.[attribute]       :  选取包含指定属性的元素                如：$("[href]")选取含有href属性的元素。
+    02.[attribute=value] :  选取等于指定属性是某个特定的值的元素    如：$("[href='#']")选取href属性值为"#"的元素。
+    03.[attribute!=value]:  选取不等于指定属性是某个特定的值的元素  如：$("[href!='#']")选取href属性值不为"#"的元素。
+    04.[attribute^=value]:  选取指定属性以某个特定的值开头的元素    如：$("[href^='en']")选取href属性值以"en"开头的元素。
+    05.[attribute$=value]:  选取指定属性以某个特定的值结尾的元素    如：$("[href$='en']")选取href属性值以"en"结尾的元素。
+    06.[attribute*=value]:  选取等于指定属性包含某些值的元素        如：$("[href*='#']")选取href属性值包含有"#"的元素。
+
+5.基本过滤选择器：
+    过滤选择器：主要通过特定的过滤规则来筛选出所需的DOM元素。
+    过滤选择器分为：基本过滤，内容过滤，可见性过滤，属性过滤，子元素过滤和表单对象属性过滤。
+
+    01. :first        : 选取第一个元素                       如：$("li:first")选取所有<li>元素中的第一个<li>元素。
+    02. :last         : 选取最后一个元素                     如：$("li:last")选取所有<li>元素中的最后一个<li>元素。
+    03. :not(selector): 选取去除所有与给定选择器匹配的元素。   如：$("li:not(.three)")选取class不是three的元素。
+    04. :even         : 选取索引是偶数的所有元素(index从0开始) 如：$("li:even")选取索引是偶数的所有<li>元素。
+    05. :odd          : 选取索引是奇数的所有元素(index从0开始) 如：$("li:odd")选取索引是奇数的所有<li>元素。
+    06. :eq(index)    : 选取索引等于index的元素(index从0开始) 如：$("li:eq(1)")选取索引等于1的<li>元素。
+    07. :gt(index)    : 选取索引大于index的元素(index从0开始) 如：$("li:gt(1)")选取索引大于1的<li>元素(注意：大于1，不包括1)。
+    08. :lt(index)    : 选取索引小于index的元素(index从0开始) 如：$("li:gt(1)")选取索引小于1的<li>元素(注意：大于1，不包括1)。
+    09. :header       : 选取所有标题元素，如h1~h6             如：$(":header")选取网页中所有标题元素。
+    10. :focus        : 选取当前获取焦点的元素                如：$(":focus")选取当前获取焦点的元素。
+    11. :animated     : 选择所有动画元素                      如：$(":animated")选择当前所有动画元素。
+
+6.可见性过滤器(通过元素显示状态选取元素的选择器称为可见性过滤选择器)：
+    01.:visible： 选取所有可见的元素 如：$(":visible")
+    02.:hidden ： 选取所有隐藏的元素 如：$(":hidden")
+    注意点：可见性过滤器：:hidden获取的元素不仅包括样式为display为"none"的元素，还包括文本隐藏域(<input type="hidden"/>)和visibility:hidden之类的元素。
+
+7.jQuery选择器的注意事项：
+    01.选择器含有特殊符号的注意事项
+       如：<div id="id#a"></div>
+           <div id="id[0]"></div>
+       按普通方式获取(不能正确获取)：
+           $("#id#a");
+           $("#id[0]");
+       正确获取：
+          $("#id\\#a");
+          $("#id\\[0\\]");
+
+    02.选择器含有空格：
+        示例：
+        <div class="test">
+            <div style="display:none;"></div>
+            <div style="display:none;"></div>
+            <div style="display:none;"></div>
+            <div class="test" style="display:no     ne;"></div>
+        </div>
+        <div class="test" style="display:none;"></div>
+        <div class="test" style="display:none;"></div>
+
+        用jQuery选择器获取：
+            var $_a=$(".test :hidden") //带空格
+            var $_b=$(".test:hidden")  //不带空格
+            $_a.length;                //4      选取的是class名为"test"的元素内部的隐藏元素。
+            $_b.length;                //3      选取的是隐藏的class为"test"的元素。
+
+第7单元=====================================
+1.载入事件：
+    01.解释：window事件的一种，表示当前用户执行某些会影响浏览器的操作时触发的事件，如打开页面时加载页面，关闭窗口，调节窗口大小，移动窗口等操作引发的事件处理。
+
+2.鼠标事件：
+    01.click()      : 触发或将函数绑定到指定元素的click事件      执行时机：鼠标单击时。
+    02.mouseover()  : 触发或将函数绑定到指定元素的mouseover事件  执行时机：鼠标指针移过时。(鼠标指针在被选元素的子元素来回进入也会触发事件)
+    03.mouseout()   : 触发或将函数绑定到指定元素的mouseout事件   执行时机：鼠标指针移出时。(鼠标指针在被选元素的子元素来回离开也会触发事件)
+    04.mouseenter() : 触发或将函数绑定到指定元素的mouseenter事件 执行时机：鼠标指针进入时。(鼠标指针在被选元素的子元素来回进入不会触发事件)
+    05.mouseleave() : 触发或将函数绑定到指定元素的mouseleave事件 执行时机：鼠标指针离开时。(鼠标指针在被选元素的子元素来回离开不会触发事件)
+
+3.键盘事件：
+    01.keydown()    : 触发或将函数绑定到指定元素的keydown事件    执行时机：按下按键时。
+    02.keyup()      : 触发或将函数绑定到指定元素的keyup事件      执行时机：释放按键时。
+    03.keypress()   : 触发或将函数绑定到指定元素的keypress事件   执行时机：产生可打印字符时，在keydown和keyup之间触发，keyup之前会产生很多的keypress事件。
+    04.keyCode      : 可以获取当前按键的键值。
+
+4.浏览器事件：
+    01.resize()     : 通过resize()方法触动resize事件，进而处理相关函数(调整浏览器窗口大小时，页面会有变化)。
+    语法：$(selector).resize();
+
+5.绑定事件与移除事件(属于基础事件)：
+    01.作用：主要用于绑定或移除其他基础事件。
+    02.绑定事件：
+        语法:bind(type,[data],fn)
+        参数：type   :事件类型  主要包括click,mouseover,mouseout等基础事件，还有自定义事件。
+             [data] :可选参数   作为event.data属性值传递给事件对象的额外数据对象。
+             fn     :处理函数   用来绑定的处理函数。
+        示例：
+        绑定单个事件：$('选择器').bind('事件',function(){
+                        //执行代码;
+                     });
+
+        绑定多个事件：$('选择器').bind({
+                        事件:function(){
+                           //执行代码;
+                        },
+                        事件:function(){
+                           //执行代码;
+                        }
+                     });
+         注意点：除bind()方法之外，还有on(),live()和one()等事件绑定方法。
+
+    03.移除事件：
+        语法：unbind([type],[fn])
+        参数：[type] : 事件类型  主要包括click,mouseover,mouseout等基础事件，还有自定义事件。
+              [fn]  : 处理函数  用来绑定的处理函数。
+        示例：
+            $('选择器').unbind('事件',function(){
+                //执行代码;
+             });
+
+            $('选择器').unbind()
+        注意点：unbind()方法两个参数不是必需的，当unbind()不带参数时，表示移除所绑定的全部事件。
+
+6.复合事件：
+    01.hover()方法：
+        语法：hover(enter,leave);
+        作用：模拟鼠标指针移入移出事件，鼠标指针移至元素上时，触发第一个函数，鼠标指针移出元素时，触发第二个函数。
+        示例：
+            $("选择器").hover(
+                function(){
+                 //执行代码;
+                },
+                function(){
+                 //执行代码;
+                }
+            );
+    02.toggle()方法：
+        语法：带参：toggle(fn1,fn2,...,fnN);  不带参：toggle();
+        作用：带参数的方法用于模拟鼠标连续click事件(第一次点击元素，触发第一个函数，第二次点击元素，触发第二个函数,以此类推，直至最后一个函数又重新开始)，
+             不带参数的方法与show()和hide()方法作用一样(元素可见，则切换为不可见，元素隐藏，则切换为可见状态)。
+
+        带参示例：
+                $("选择器").toggle(
+                    function(){ //执行代码;},
+                    function(){ //执行代码;},
+                    function(){ //执行代码;}
+                );
+        不带参示例：
+                 $("选择器").toggle();
+
+    03.toggleClass()方法：
+        语法：toggleClass(className);
+        作用：可以对样式进行切换，事件触发某元素'加载某元素'和'移除某元素'之间切换(即点击元素一下加载，再点击一下移除)。
+        示例：
+             $("选择器").click(function(){
+                $("选择器").toggleClass("样式名")
+             });
+
+7.控制元素显示与隐藏：
+    01.显示语法：$("选择器").show([speed],[callback]);
+      作用：等同于$("selector").css("display","block"),除了能元素显示，还有显示时效果，显示速度。
+
+    02.隐藏语法：$("选择器").hide([speed],[callback]);
+      作用：等同于$("selector").css("display","none"),除了能元素隐藏，还有隐藏时效果，隐藏速度。
+
+    两者参数：
+    speed: 可选 规定元素(从隐藏到完全可见的速度)或(可见到隐藏的速度)，默认为0 ；可能值：毫秒(1000),slow,normal,fast。
+    callback: 可选 show函数或hide函数执行完之后，要执行的函数。
+
+8.改变元素透明度：
+    01.控制元素淡入：
+        语法：$("选择器").fadeIn([speed],[callback]);
+        作用：如果元素隐藏，则可以用fadeIn()方法控制元素淡入，可以定义淡入时效果，显示速度。
+
+    02.语法：$("选择器").fadeOut([speed],[callback]);
+       作用：如果元素显示，则可以用fadeOut()方法控制元素淡出，可以定义淡出时效果，显示速度。
+
+    两者参数：
+    speed: 可选 规定元素(从隐藏到完全可见的速度)或(可见到隐藏的速度)，默认为0 ；可能值：毫秒(1000),slow,normal,fast。
+    callback: 可选 fadeIn函数或fadeOut函数执行完之后，要执行的函数，除非设置speed参数，否则不能设置该参数。
+
+9.改变元素高度：
+    01.slideUp():
+        语法：$("选择器").slideUp([speed],[callback]);
+        作用：若元素的display属性值为block，当调用slideUp()方法时，元素会从下向上缩短直至隐藏。
+    02.slideDown():
+        语法：$("选择器").slideDown([speed],[callback]);
+        作用：若元素的display属性值为none，slideDown()方法时，元素会从上向下延伸显示。
+     两者参数：
+     speed：可选  用来规定改变元素高度的时长，取值：毫秒(1000),slow,normal,fast。
+     callback: 可选  表示改变元素高度后执行的函数名称，实际开发不多用。
+
+10.自定义动画：
+    语法：$("selector").animate({params},speed,callback);
+    参数：
+        params  : 必须，定义形成动画的CSS属性。
+        speed   : 可选，规定效果时长，取值：毫秒(1000),slow,normal,fast。
+        callback: 可选，滑动完成后执行的函数名称。
+    注意点：默认情况下，所有 HTML 元素的位置都是静态的，并且无法移动。如需对位置进行操作，记得首先把元素的 CSS position 属性设置为 relative、fixed 或 absolute。
+           animate()可操作多个属性。
+
+第8单元=====================================
+DOM操作分为：样式操作，文本和value属性值操作，节点操作(属性操作，节点遍历，CSS-DOM操作)。
+
+1.样式操作：
+    01.设置样式：
+        语法：$(selector).css(name,value); //设置单个属性      或者  $(selector).css({name:value,name:value,name:value...}) 同时设置多个属性
+        参数：
+            name : 必需，规定CSS属性名称，可以是任何CSS属性
+            value: 必需，规定CSS属性值，可以是任何CSS属性值
+    02.获取属性：
+        语法：$(selector).css(name); //获取属性
+
+    03.追加样式：
+        语法：$(selector).addClass(class);//追加单个属性       或者   $(selector).addClass(class1class2 classN);//追加多个属性
+        参数：class为类样式名称，也可增加多个类样式，各样式之间用空格隔开即可。
+
+    04.移除样式：
+        语法：$(selector).removeClass(class) //移除单个样式    或者    $(selector).addClass(class1class2 classN);//移除多个属性
+        参数：class为类样式名称，也可移除多个类样式，各样式之间用空格隔开即可。
+
+    05.切换样式：
+        语法：$(selector).toggleClass(class);
+        参数：class为类样式名称，其功能是当元素中含有名称class的CSS样式时，删除该类样式，否则增加该名称的类样式(与toggle方法切换可见或隐藏元素异同)。
+
+    06.判断是否含指定的样式：
+        语法：$(selector).hasClass(class);
+        参数：class为类样式名称，必需值，规定指定元素中查找的类名，返回值为布尔型。
+
+2.内容操作：
+    01.HTML代码操作(添加内容会解析HTML代码)：
+        语法：$(selector).html([content]);
+        参数：content ：可选规定被选元素的新内容，该参数可以包含HTML标签；无参数时，表示获取被选元素的文本内容。
+
+    02.标签内容操作(添加内容不会解析HTML代码)：
+        语法：$(selector).text([content]);
+        参数：content ：可选规定被选元素的新文本内容，注：特殊字符会被编码；无参数时，表示获取被选元素的文本内容。
+
+    03.属性值操作：
+        语法：$(selector).val([value]);
+        参数：value:可选，规定被选元素的新内容；无参数时，返回值为第一个被选元素的value属性的值。
+
+3.节点操作：
+    01.查找节点：想对节点进行操作，即增，删，改，首先要找到要操作的元素，可以使用jQuery选择器。
+
+    02.创建节点：
+        语法: $(selection)  或者  $(element)  或者  $(html)
+        参数: selector  :选择器，使用jQuery选择器匹配元素。
+              element  :DOM元素，以DOM元素来创建jQuery对象。
+              html     :HTML代码，使用HTML字符串创建jQuery对象。
+
+    03.插入节点：
+        内部插入：append(content)   : 向所选择的元素内部插入内容          $(A).append(B)表示将B追加到A中。
+                 appendTo(content) : 把所选择的元素追加到另一个指定元素集合中$(A).append(B)表示把A追加到B中。
+                 prepend(content)  : 向每个选择的元素内部前置内容         $(A).prepend(B)表示将B插入到A前。
+                 prependTo(content): 将所有匹配元素前置到指定元素中       $(A).prepend(B)表示将A前置到B中。
+
+        外部插入：after(content)       : 在每个匹配的元素之后插入内容，    $(A).after(B)表示将B插入A之后。
+                 insertAfter(content) : 将所有匹配元素插入指定元素的后面  $(A).insertAfter(B)表示将A插入B之后。
+                 before(content)      : 向所选择元素外部前面插入内容，    $(A).before(B)表示将B插入A之后。
+                 insertBefore(content): 将所有匹配元素插入指定元素的前面  $(A).insertBefore(B)表示将A插入B之前。
+
+    04.删除节点：
+        remove(): 用于删除匹配元素，删除内容包括匹配元素包含的文本和子节点。
+            语法:  $(selector).remove([expr]);
+            参数：  expr为可选项，该参数为筛选元素的jQuery表达式，获得指定元素，并进行删除。
+                   无参则删除整个元素的内容。
+
+        empty(): 该方法不是删除节点，而是清空内容，它能清空元素中所有后代节点。
+            语法：$(selector).empty();
+
+        区别：前者删除整个节点，而后者仅删除节点中的内容。
+
+        detach(): 该方法删除元素，但不会删除事件。
+
+    05.替换节点：
+        replaceWith()方法：将所有匹配的元素都替换成指定的HTML或者DOM元素。
+            语法：$("选择器").replaceWith(HTML或者DOM元素)。
+
+        replaceAll()方法：与replaceWith()方法相似，操作颠倒。
+            语法：$(HTML或者DOM元素).replaceWith("选择器")。
+
+    06.复制节点：
+        clone()方法：该方法能生成被选元素的副本，包括子节点，文本和属性。
+            语法：$(selector).clone([includeEvents]);
+            参数：includeEvents为可选值，为布尔值true和false，true为复制事件处理(即深克隆)，false为复制内容(即浅克隆)。
+
+4.属性操作：
+    01.获取与设置元素属性：
+        语法：$(selector).attr([name]); //获取属性值  或者  $(selector).attr({name1:value1,name2:value2,nameN:valueN});  设置多个属性值
+        参数：name:表示属性名称，value表示属性值。
+
+    02.删除元素属性：
+        语法：$(selector).removeAttr(name);
+        参数：name:为元素属性名称。
+
+5.节点遍历：
+    01.遍历子节点：
+         children()方法：该方法可以用来获得元素的所有子元素，而不考虑其他后代元素。
+         语法：$(selector).children([expr]);
+         参数：expr为可选，用于过滤子元素的表达式。
+
+    02.遍历同辈元素：
+        next([expr])：用于获取紧邻匹配元素之后的元素;
+        语法：$("selector").next();
+        参数：expr可选，用于过滤同辈元素的表达式。
+
+        prev([expr])：用于获取紧邻匹配元素之前的元素;
+        语法：$("selector").prev();
+        参数：expr可选，用于过滤同辈元素的表达式。
+
+        siblings([expr])：用于获取位于匹配元素前面和后面的所有同辈元素
+        语法：$("selector").siblings();
+        参数：expr可选，用于过滤同辈元素的表达式。
+
+    03.遍历前辈元素：
+        parent([selector])方法：获取当前匹配元素集合中每个元素的父级元素。
+        语法：$("selector").parent([selector]);
+        参数：selector可选。
+
+        parents([selector])方法：获取当前匹配元素集合中每个元素的祖先元素(从父级开始查找，查找范围为其父节点和祖先节点，即一直往父级上面找)。
+        语法：$("selector").parents([selector]);
+        参数：selector可选。
+
+6.其他遍历方法：
+    如：each()，end()，find()，filter()，eq()，first()，last()。
+    01.each()方法：规定为每个匹配元素规定运行的函数。
+        语法：$(selector).each(function(index,element));
+        参数：index表示选择器的index8=位置，element表示当前的元素，当返回false时可用于及早停止循环。
+
+    02.end()方法：结束当前链条中最近的筛选操作，并将匹配元素集还原为之前的状态。
+        语法：.end();
+        即返回最初的操作对象，该对象没有操作之前的状态
+
+7.CSS-DOM操作：
+    01.css()                 : 设置或返回匹配元素的样式属性                                              如：$("选择器").css("样式":"样式值");
+    02.height([value])       : 参数可选，设置或返回匹配元素的高度，没有规定长度单位，则使用默认的px作为单位。 如：$("选择器").height(值);
+    03.width([value])        : 参数可选，设置或返回匹配元素的宽度，没有规定长度单位，则使用默认的px作为单位。 如：$("选择器").width(值);
+    04.offset([value])       : 返回以像素为单位的top和left坐标，仅对可见元素有效。                         如：$("选择器").offset();
+    05.offParent()           : 返回最近的已定位祖先元素，定位元素指的是元素的position值被设置relative,absolute或fixed的元素。如：$("选择器").offParent();
+    06.position()            : 返回第一个匹配元素相对于父元素的位置。                                     如：$("选择器").position();
+    07.scrollLeft([position]): 参数可选，设置或返回匹配元素相对滚动条左侧的偏移。                          如：$("选择器").scrollLeft(值);
+    08.scrollTop([position]) : 参数可选，设置或返回匹配元素相对滚动条顶部的偏移。                          如：$("选择器").scrollTop(值);
+
+第9单元=====================================
+1.表单选择器：
+    01.:input    : 匹配所有input，textarea，select和button元素。如: $("选择器 :input");
+    02.:text     : 匹配所有单行文本框。                         如：$("选择器 :text");
+    03.:password : 匹配所有密码框。                             如：$("选择器 :password");
+    04.:radio    : 匹配所有单选按钮。                           如：$("选择器 :radio");
+    05.:checkbox : 匹配所有复选框。                             如：$("选择器 :checkbox");
+    06.:submit   : 匹配所有提交按钮。                           如：$("选择器 :submit");
+    07.:image    : 匹配所有图像域。                             如：$("选择器 :image");
+    08.:reset    : 匹配所有重置按钮。                           如：$("选择器 :reset");
+    09.:button   : 匹配所有按钮。                               如：$("选择器 :button");
+    10.:file     : 匹配所有文件框。                             如：$("选择器 :file");
+    11.:hidden   : 匹配所有 不可见元素，或type为hidden的元素。    如：$("选择器 :hidden");
+    注意：":hidden"在Firefox浏览器下，不包括option元素。
+
+2.表单属性过滤器：
+    01.:enabled  : 匹配所有可用元素   如：$("选择器 :enabled");
+    02.:disabled : 匹配所有不可用元素 如：$("选择器 :disabled");
+    03.:checked  : 匹配所有被选中元素(复选框，单项按钮，select中的option) 如:$("选择器 :checked");
+    04.:selected : 匹配所有选中的option元素 如：$("选择器 :selected");
+
+3.表单验证事件和方法：
+    01.onblur : 失去焦点，当光标离开某个文本框时触发。
+    02.onfocus: 获得焦点，当光标进入某个文本框时触发。
+    03.blur() : 从文本域移开焦点。
+    04.focus(): 在文本域中设置焦点，即获得光标。
+    05.select(): 选取文本域中的内容，突显输入区域内容。
+
+4.正则表达式：
+    作用：描述字符模式的对象。
+    01.定义正则表达式：
+        语法：普通方式：var reg=/表达式/附加参数   或者   构造函数：var reg=new RegExp("表达式","附加参数");
+        附加参数：g:代表可以进行全局匹配。
+                 i:代表不区分大小写匹配。
+                 m:代表可以进行多行匹配。
+
+    02.表达式模式：
+        简单模式：是指通过普通字符的组合来表达的模式
+        示例：var reg=/china/;
+        组合模式：是指含有通配符来表达的模式
+        示例：var reg=/^\w+$/;
+    03.RegExp对象 ：Regular Expression(正则表达式)的缩写。
+        方法：exec() : 检索字符中是正则表达式的匹配，返回找到的值，并确定其位置。
+             test() : 检索字符中有指定的值，返回true和false。
+        语法：正则表达式对象实例。test(字符串)   或者   正则表达式对象实例。exec(字符串)
+
+        属性：global    :RegExp对象是否具有标志g。
+             ignoreCase:RegExp对象是否具有标志i。
+             multiline :RegExp对象是否具有标志m。
+    04.字符串对象：
+        方法：match() : 找到一个或多个正则表达式。
+             search(): 检索与正则表达式相匹配的值。
+             replace():替换与正则表达式匹配的字符串。
+             split()  :把字符串分割为字符串数组。
+
+        语法：字符串对象.match(字符串的值或RegExp对象);
+             字符串对象.replace('RegExp对象','替换字符串的值');//如果设置全文搜索，则符合条件的RegExp对象或字符串都将替换，否则只替换第一个(返回替换后字符串)。
+             字符串对象.split(分割符,n);//分割符可以是字符串，也可以是正则表达式，n是限制输出数组个数为可选项。
+    05.正则表达式的常用符号：
+        /.../ : 代表一个模式的开始和结束。
+        ^     : 匹配字符串的开始。
+        $     : 匹配字符串的结束。
+        \s    : 任何空白字符。
+        \S    : 任何非空白字符。
+        \d    : 匹配一个数字字符，等价于[0-9]。
+        \D    : 除了数字之外的任何字符，等价于[^0-9]。
+        \w    : 匹配一个数字，下划线或字母字符，等价于[A-Za-z0-9]。
+        \W    : 任何非单字字符，等价于[^a-zA-z0-9]。
+        .     : 除了换行符之外的任意字符。
+
+    06.正则表达式的重复符号：
+        {n}   : 匹配前一项n次。
+        {n,}  : 匹配前一项n次，或者多次。
+        {n,m} : 匹配前一项至少n次，但不能超过m次。
+        *     : 匹配前一项0次或多次，等价于{0,}
+        +     : 匹配前一项1次或多次，等价于{1,}
+        ?     : 匹配前一项0次或1次，等价于{0,1}
+
+        注意点: ()是为了提取匹配的字符串，表达式中有几个()就有几个相应的匹配字符串。
+               []是定义匹配的字符串，如[A-Za-z0-9]表示字符串要匹配英文字符和数字。
+               {}用来匹配长度，如\s{3}表示匹配三个空格。
+
+    07.HTML新增属性
+        placeholder: 提供一种提示(hint)，输入域为空时显示，获得焦点输入内容后消失。
+        required   : 规定输入域不能为空。
+        pattern    : 规定验证input域的模式(正则表达式)。
+
+    08.validity属性：
+        valueMissing        ：属性：返回一个必填字段是否有内容。返回值true/false。
+        typeMismatch        ：属性：用来返回用户输入的内容是否符合类型，主要面对Email，URL，number这三个输入类型的控件；返回值true/false。
+        tooLong属性         ：用来返回用户输入的内容是否超过规定的长度。返回值true/false。
+        stepMismatch属性    ：用来返回用户输入的内容是否超过规定的长度，是否符合step的过度间隔。返回值true/false。
+        rangeUnderflow属性  ：用来返回用户输入的数字是否小于设置的最小值，关联min属性。返回值true/false。
+        rangeOverflow属性   ：用来返回用户输入的数字是否大于设置的最大值，关联mmax属性。返回值true/false。
+        patternMisMatch属性 ：用来返回用户输入的内容是否满足规定的验证要求，关联pattern使用。返回值true/false。
+        custonError属性     ：用于定义一些自定义的错误信息！属性mode：on/off/RemoteOnly,属性defaultRedirect重定向URL。返回值true/false。

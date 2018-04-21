@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用CSS3构造器伪类选择器</title>
+    <style>
+        /*ul第一个子元素*/
+        ul li:first-child{background: red}
+        /*ul最后一个子元素*/
+        ul li:last-child{background: green}
+        /*选择到父级里的第一子元素p*/
+        p:nth-child(1){background: yellow}
+        /*父元素里第2个类型为p的元素*/
+        p:nth-of-type(2){background: blue}
+    </style>
+</head>
+<body>
+    <!--<h2>h2</h2>-->
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <ul>
+        <li>li1</li>
+        <li>li1</li>
+        <li>li1</li>
+
+    </ul>
+
+</body>
+</html>

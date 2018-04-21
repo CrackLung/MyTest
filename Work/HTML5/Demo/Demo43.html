@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QQ彩贝导航</title>
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            height: 100px;
+            background: linear-gradient(to top,rgba(204,204,204,0.4),white);
+        }
+        ul{
+            list-style: none;
+            height: 100px;
+        }
+        ul li{
+            float: left;
+            width: 99px;
+            height: 100px;
+        }
+        .div1{
+            width: 170px;
+            height: 100px;
+            margin-right: 50px;
+            float: left;
+        }
+        nav{
+            width: 600px;
+            height: 100px;
+            float: left;
+        }
+        .div2{
+            width: 160px;
+            float: right;
+        }
+        .div0{
+            width: 1000px;
+            height: 100px;
+            margin: 0px auto;
+        }
+        .div1,.div2,li{
+            line-height: 100px;
+        }
+        a{
+            margin:0px 15px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+        }
+        .div2 img{
+
+            margin:0px 10px;
+        }
+        .div1 img{
+            position: absolute;
+            top: 25px;
+        }
+        li img{
+            position: absolute;
+            top: 10px;
+            left: 15px;
+        }
+        .div3{
+            width: 98px;
+            height: 40px;
+            position: absolute;
+        }
+        .div4{
+            width: 98px;
+            height: 40px;
+            position: absolute;
+        }
+        .div2 img:hover{
+            transform: rotate(360deg);
+            transition:transform 3s linear;
+        }
+        /*.img2{*/
+
+            /*opacity: 1;*/
+        /*}*/
+        /*.img3{*/
+            /**/
+            /*opacity: 1;*/
+        /*}*/
+        .div3{
+            background: url("../images/Demo43图片样式/header_03.png") 16px 10px no-repeat ;
+        }
+        .div4{
+            background: url("../images/Demo43图片样式/header_07.png") 16px 10px no-repeat ;
+        }
+        a:hover  .div4{
+            animation: spread 1s linear both;
+            background: url("../images/Demo43图片样式/header_09.png") 16px 10px no-repeat ;
+        }
+       a:hover  .div3{
+            animation: spread 1s linear both;
+            background: url("../images/Demo43图片样式/header_05.png") 16px 10px no-repeat ;
+        }
+       a:hover{
+           color: #FAA53B;
+       }
+        @keyframes spread{
+                     0%{
+                         width: 0px;
+                     }
+                     25%{
+                         width: 20px;
+                     }
+                     50%{
+                         width: 50px;
+                     }
+                     100%{
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="div0">
+        <div class="div1">
+            <img src="../images/Demo43图片样式/logo_170x46.png">
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><div class="div3"></div>返回商城</a>|</li>
+                    <li><a href="#">商旅频道</a>|</li>
+                    <li><a href="#"><div class="div4"></div>积分商城</a>|</li>
+                    <li><a href="#">了解彩贝</a>|</li>
+                    <li><a href="#">彩贝活动</a>|</li>
+                    <li><a href="#">个人中心</a></li>
+                </ul>
+            </nav>
+        <div class="div2">
+            <img src="../images/Demo43图片样式/iconsB_11.gif">
+            <img src="../images/Demo43图片样式/iconsB_12.gif">
+            <img src="../images/Demo43图片样式/iconsB_13.png">
+        </div>
+        </div>
+    </header>
+</body>
+</html>

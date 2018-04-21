@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组的运用</title>
+</head>
+<body>
+<script type="text/javascript">
+    /**
+     * 操作字符串
+     */
+    var fruit ="apple,orange,peach,banana";
+    //从,开始分段截取，把每段字符串组成一个数组
+    var arrList=fruit.split(",");
+    //把数组的元素放入一个字符串,通过-隔开
+    var str=arrList.join("-");
+    document.write("分割前："+fruit+"<br>");
+    document.write("分割后："+str+"<br>");
+    /**
+     *遍历数组
+     */
+    var fruit1 =["apple","orange","peach","banana"];
+    // var y;
+    // document.write(typeof (y)+typeof (fruit1)+"<br>"+alert(y==fruit1));
+    //ver i未声明变量的数据类型，交由fruit1决定i是什么数据类型
+    for(var i in fruit1){
+        // document.write(typeof (i)+typeof (fruit1)+"<br>");
+        document.write(fruit1[i]+"<br>");
+    }
+    /**
+     *警告对话框
+     */
+    var userName="rose";
+    var string="我的名字叫rose";
+    //三个警告框依次出现
+    alert("Hello Word");
+    alert("我的名字叫："+userName);
+    alert(string);
+    /**
+     * 提示对话框(该方法的返回值可以被引用或存储到变量中，例如：var color=prompt("请输入你喜欢的颜色："，"默认值");)
+     * 第二个值如果不写输入框则显示undefined,也可设置为空字符串
+     * 用户点击取消或关闭按钮，该方法返回null,点击确定则返回空字符串(或者输入的内容)
+     */
+    prompt("请输入你喜欢的颜色：","红色");
+</script>
+</body>
+</html>

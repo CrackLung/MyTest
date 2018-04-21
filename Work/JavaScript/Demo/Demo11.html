@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证邮箱有效性</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var num=prompt("请输入正确的邮箱地址","");
+        if(num.indexOf('@')!=-1&&num.indexOf('.')!=-1&&num.indexOf('.')>num.indexOf('@')&&num.indexOf('.')<=num.length-2){
+            var num1=num.indexOf('@');
+            var num2=num.substring(0,num1);
+            alert("邮箱地址正确，邮箱名称是："+num2);
+        }else if(num.length==0||num.indexOf(' ')==0||num.indexOf(' ')!=-1){
+            alert("邮箱不能为空或含有空格！");
+        }else if(num.indexOf('@')==0||num.indexOf('.')==0){
+            alert("邮箱地址@和.不能在开头位置！");
+        }else{
+            alert("邮箱地址必须包含@和.");
+        }
+    </script>
+</body>
+</html>
